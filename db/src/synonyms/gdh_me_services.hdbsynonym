@@ -1,0 +1,92 @@
+{
+	"ACTIVITY_LOG": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.ACTIVITY_LOG"
+		}
+	},
+	"CONTAINER_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.CONTAINER_DATA"
+		}
+	},
+	"SFC_STEP": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC_STEP"
+		}
+	},
+	"CONTAINER_MEMBER": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.CONTAINER_MEMBER"
+		}
+	},
+	"CUSTOM_FIELDS": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.CUSTOM_FIELDS"
+		}
+	},
+	"INVENTORY_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.INVENTORY_DATA"
+		}
+	},
+	"NC_CUSTOM_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.NC_CUSTOM_DATA"
+		}
+	},
+	"NC_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.NC_DATA"
+		}
+	},
+	"NC_DATA_REF_DES": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.NC_DATA_REF_DES"
+		}
+	},
+	"PARAMETRIC": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.PARAMETRIC"
+		}
+	},
+	"PARAMETRIC_MEASURE": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.PARAMETRIC_MEASURE"
+		}
+	},
+	"PARAMETRIC_MEASURE_CUSTOM": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.PARAMETRIC_MEASURE_CUSTOM"
+		}
+	},
+	"SFC": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC"
+		}
+	},
+	"SFC_ASSY": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC_ASSY"
+		}
+	},
+	"SFC_ASSY_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC_ASSY_DATA"
+		}
+	},
+	"SFC_DATA": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC_DATA"
+		}
+	},
+	"SFC_LOCATION": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SFC_LOCATION"
+		}
+	},
+	"SHOP_ORDER": {
+		"target": {
+			"object": "gdh_me_data_interface_layer.SHOP_ORDER"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "ServiceName_1": {
+		"object_owner": {
+			"global_roles": [{
+				"roles_with_admin_option": ["KOSTAL_BW_DATA_ACCESS_UPS_ROLE_G"]
+			}]
+		},
+		"application_user": {
+			"global_roles": [{
+				"roles": ["KOSTAL_BW_DATA_ACCESS_UPS_ROLE"]
+			}]
+		}
+	} 
+}

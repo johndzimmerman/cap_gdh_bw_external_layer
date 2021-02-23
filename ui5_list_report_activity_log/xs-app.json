@@ -1,0 +1,8 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "none",
+	"routes": [{
+		"source": "/odata/v2/GDHMEService/",
+		"destination": "odatasrv_api"
+	}]
+}

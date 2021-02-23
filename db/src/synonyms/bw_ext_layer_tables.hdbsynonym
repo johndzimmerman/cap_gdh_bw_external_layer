@@ -1,0 +1,866 @@
+{
+	"/BIC/AK_ME_O36A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O36H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O36H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O30H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O30H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O37H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O37H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O31H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O31H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O35H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O35H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O20H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O20H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O33H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O33H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O32H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O32H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O34H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O34H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O23H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O23H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O24H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O24H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O25H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O25H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O22H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O22H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O26H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O26H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O27H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O27H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O28H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O28H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O29H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O29H2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21A2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21A2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21B2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21B2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21C2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21C2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21D2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21D2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21E2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21E2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21F2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21F2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21G2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21G2",
+			"schema": "SAPBW2" 
+		}
+	},
+	"/BIC/AK_ME_O21H2": {
+		"target": {
+			"object": "/BIC/AK_ME_O21H2",
+			"schema": "SAPBW2" 
+		}
+	}
+}

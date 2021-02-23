@@ -1,0 +1,59 @@
+ID: cap_gdh_bw_external_layer
+_schema-version: "2.1"
+description: Wrap the BW GDH ADSO with CDS
+version: 0.0.1
+modules:
+  - name: cap_gdh_bw_external_layer-db
+    type: hdb
+    path: db
+    parameters:
+      memory: 256M
+      disk-quota: 256M
+    requires:
+      - name: cap_gdh_bw_external_layer-db-hdi-container
+      - name: KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: ServiceName_1
+          service: '~{KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS}'      
+  - name: cap_gdh_bw_external_layer-srv
+    type: java
+    path: srv
+    parameters:
+      memory: 1024M
+    provides:
+      - name: srv_api
+        properties:
+          url: ${default-url}
+    requires:
+      - name: cap_gdh_bw_external_layer-db-hdi-container
+        properties:
+          JBP_CONFIG_RESOURCE_CONFIGURATION: '[tomcat/webapps/ROOT/META-INF/context.xml:
+            {"service_name_for_DefaultDB" : "~{hdi-container-name}"}]'
+
+  
+
+
+  
+
+
+
+  - name: ui5_list_report_activity_log
+    type: html5
+    path: ui5_list_report_activity_log
+    requires:
+     - name: srv_api
+       group: destinations
+       properties:
+        name: odatasrv_api
+        url:  ~{url}       
+
+resources:
+  - name: cap_gdh_bw_external_layer-db-hdi-container
+    type: com.sap.xs.hdi-container
+    properties:
+      hdi-container-name: ${service-name}
+  - name: KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS
+    type: org.cloudfoundry.existing-service
+    properties:
+      KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS: '${service-name}'      

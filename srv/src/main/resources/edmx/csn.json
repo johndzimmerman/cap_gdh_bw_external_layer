@@ -1,0 +1,5862 @@
+{
+  "definitions": {
+    "ACTIVITY_LOG": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "ACTIVITY_LOG",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTION_CODE": {
+          "@cds.persistence.name": "ACTION_CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "ACTION_DETAIL": {
+          "@cds.persistence.name": "ACTION_DETAIL",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_HANDLE_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_4": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_5": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROCESS_LOT": {
+          "@cds.persistence.name": "PROCESS_LOT",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "REWORK": {
+          "@cds.persistence.name": "REWORK",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREV_SITE": {
+          "@cds.persistence.name": "PREV_SITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "key": true,
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      }
+    },
+    "CONTAINER_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "CONTAINER_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CONTAINER_NAME": {
+          "@cds.persistence.name": "CONTAINER_NAME",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "CONTAINER_NUMBER": {
+          "@cds.persistence.name": "CONTAINER_NUMBER",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "CONTAINER_MEMBER": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "CONTAINER_MEMBER",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CONTAINER_NUMBER": {
+          "@cds.persistence.name": "CONTAINER_NUMBER",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SUB_ID": {
+          "@cds.persistence.name": "SUB_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 34
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ARCHIVED": {
+          "@cds.persistence.name": "ARCHIVED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PACKING_LEVEL": {
+          "@cds.persistence.name": "PACKING_LEVEL",
+          "type": "cds.String",
+          "length": 128
+        },
+        "PACKING_LEVEL_DETAIL": {
+          "@cds.persistence.name": "PACKING_LEVEL_DETAIL",
+          "type": "cds.String",
+          "length": 5
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      }
+    },
+    "CUSTOM_FIELDS": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "CUSTOM_FIELDS",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "IDENTIFIER_NAME": {
+          "@cds.persistence.name": "IDENTIFIER_NAME",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "IDENTIFIER_1": {
+          "@cds.persistence.name": "IDENTIFIER_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_2": {
+          "@cds.persistence.name": "IDENTIFIER_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_3": {
+          "@cds.persistence.name": "IDENTIFIER_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_4": {
+          "@cds.persistence.name": "IDENTIFIER_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_5": {
+          "@cds.persistence.name": "IDENTIFIER_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ATTRIBUTE": {
+          "@cds.persistence.name": "ATTRIBUTE",
+          "type": "cds.String",
+          "length": 60
+        },
+        "VALUE": {
+          "@cds.persistence.name": "VALUE",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "GDHMEService": {
+      "kind": "service",
+      "@source": "srv/me-services.cds"
+    },
+    "GDHMEService.ACTIVITY_LOG_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "ACTIVITY_LOG",
+      "@UI.LineItem": [
+        {
+          "Value": {
+            "=": "PLANT"
+          }
+        },
+        {
+          "Value": {
+            "=": "GMASITE"
+          }
+        },
+        {
+          "Value": {
+            "=": "SFC"
+          }
+        },
+        {
+          "Value": {
+            "=": "OPERATION"
+          }
+        },
+        {
+          "Value": {
+            "=": "RESRCE"
+          }
+        },
+        {
+          "Value": {
+            "=": "PARTITION_DATE"
+          }
+        },
+        {
+          "Value": {
+            "=": "ACTION_CODE"
+          }
+        },
+        {
+          "Value": {
+            "=": "MATERIAL"
+          }
+        },
+        {
+          "Value": {
+            "=": "STEP_ID"
+          }
+        },
+        {
+          "Value": {
+            "=": "DATE_TIME"
+          }
+        },
+        {
+          "Value": {
+            "=": "CALDAY"
+          }
+        },
+        {
+          "Value": {
+            "=": "CALWEEK"
+          }
+        },
+        {
+          "Value": {
+            "=": "CALMONTH"
+          }
+        },
+        {
+          "Value": {
+            "=": "CALYEAR"
+          }
+        }
+      ],
+      "@UI.SelectionFields": [
+        {
+          "=": "PLANT"
+        },
+        {
+          "=": "SFC"
+        },
+        {
+          "=": "OPERATION"
+        },
+        {
+          "=": "RESRCE"
+        },
+        {
+          "=": "MATERIAL"
+        },
+        {
+          "=": "ACTION_CODE"
+        }
+      ],
+      "@cds.persistence.name": "GDHMESERVICE_ACTIVITY_LOG_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "ACTIVITY_LOG"
+            ],
+            "as": "ACTIVITY_LOG_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTION_CODE": {
+          "@cds.persistence.name": "ACTION_CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "ACTION_DETAIL": {
+          "@cds.persistence.name": "ACTION_DETAIL",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_HANDLE_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_4": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_5": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROCESS_LOT": {
+          "@cds.persistence.name": "PROCESS_LOT",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "REWORK": {
+          "@cds.persistence.name": "REWORK",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREV_SITE": {
+          "@cds.persistence.name": "PREV_SITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "key": true,
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.CONTAINER_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "CONTAINER_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_CONTAINER_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "CONTAINER_DATA"
+            ],
+            "as": "CONTAINER_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CONTAINER_NAME": {
+          "@cds.persistence.name": "CONTAINER_NAME",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "CONTAINER_NUMBER": {
+          "@cds.persistence.name": "CONTAINER_NUMBER",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.CONTAINER_MEMBER_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "CONTAINER_MEMBER",
+      "@cds.persistence.name": "GDHMESERVICE_CONTAINER_MEMBER_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "CONTAINER_MEMBER"
+            ],
+            "as": "CONTAINER_MEMBER_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CONTAINER_NUMBER": {
+          "@cds.persistence.name": "CONTAINER_NUMBER",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SUB_ID": {
+          "@cds.persistence.name": "SUB_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 34
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ARCHIVED": {
+          "@cds.persistence.name": "ARCHIVED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PACKING_LEVEL": {
+          "@cds.persistence.name": "PACKING_LEVEL",
+          "type": "cds.String",
+          "length": 128
+        },
+        "PACKING_LEVEL_DETAIL": {
+          "@cds.persistence.name": "PACKING_LEVEL_DETAIL",
+          "type": "cds.String",
+          "length": 5
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.CUSTOM_FIELDS_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "CUSTOM_FIELDS",
+      "@cds.persistence.name": "GDHMESERVICE_CUSTOM_FIELDS_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "CUSTOM_FIELDS"
+            ],
+            "as": "CUSTOM_FIELDS_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "IDENTIFIER_NAME": {
+          "@cds.persistence.name": "IDENTIFIER_NAME",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "IDENTIFIER_1": {
+          "@cds.persistence.name": "IDENTIFIER_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_2": {
+          "@cds.persistence.name": "IDENTIFIER_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_3": {
+          "@cds.persistence.name": "IDENTIFIER_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_4": {
+          "@cds.persistence.name": "IDENTIFIER_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "IDENTIFIER_5": {
+          "@cds.persistence.name": "IDENTIFIER_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ATTRIBUTE": {
+          "@cds.persistence.name": "ATTRIBUTE",
+          "type": "cds.String",
+          "length": 60
+        },
+        "VALUE": {
+          "@cds.persistence.name": "VALUE",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.INVENTORY_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "INVENTORY_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_INVENTORY_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "INVENTORY_DATA"
+            ],
+            "as": "INVENTORY_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "INVENTORY_ID": {
+          "@cds.persistence.name": "INVENTORY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "DESCRIPTION": {
+          "@cds.persistence.name": "DESCRIPTION",
+          "type": "cds.String",
+          "length": 80
+        },
+        "USAGE_COUNT": {
+          "@cds.persistence.name": "USAGE_COUNT",
+          "type": "cds.String",
+          "length": 31
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "ORIGINAL_USER": {
+          "@cds.persistence.name": "ORIGINAL_USER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "HAS_BEEN_USED": {
+          "@cds.persistence.name": "HAS_BEEN_USED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_INVENTORY": {
+          "@cds.persistence.name": "ERP_INVENTORY",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECEIVE_DATE_TIME": {
+          "@cds.persistence.name": "RECEIVE_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PARENT_INVENTORY": {
+          "@cds.persistence.name": "PARENT_INVENTORY",
+          "type": "cds.String",
+          "length": 250
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY_ON_HAND": {
+          "@cds.persistence.name": "QTY_ON_HAND",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "ORGINAL_QTY": {
+          "@cds.persistence.name": "ORGINAL_QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.NC_CUSTOM_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "NC_CUSTOM_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_NC_CUSTOM_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "NC_CUSTOM_DATA"
+            ],
+            "as": "NC_CUSTOM_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_ATTRIBUTE": {
+          "@cds.persistence.name": "DATA_ATTRIBUTE",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.NC_DATA_REF_DES_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "NC_DATA_REF_DES",
+      "@cds.persistence.name": "GDHMESERVICE_NC_DATA_REF_DES_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "NC_DATA_REF_DES"
+            ],
+            "as": "NC_DATA_REF_DES_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ASSEMBLY_ID": {
+          "@cds.persistence.name": "ASSEMBLY_ID",
+          "type": "cds.String",
+          "length": 4
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.NC_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "NC_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_NC_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "NC_DATA"
+            ],
+            "as": "NC_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "INCIDENT_DATE_TIME": {
+          "@cds.persistence.name": "INCIDENT_DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PARENT_SFC": {
+          "@cds.persistence.name": "PARENT_SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "PARENT_USER": {
+          "@cds.persistence.name": "PARENT_USER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CUSTOM_SEQUENCE": {
+          "@cds.persistence.name": "CUSTOM_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "NC_STATE": {
+          "@cds.persistence.name": "NC_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "NC_CODE": {
+          "@cds.persistence.name": "NC_CODE",
+          "type": "cds.String",
+          "length": 16
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "COMPONENT_CONTEXT": {
+          "@cds.persistence.name": "COMPONENT_CONTEXT",
+          "type": "cds.String",
+          "length": 250
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "type": "cds.String",
+          "length": 36
+        },
+        "COMMENTS": {
+          "@cds.persistence.name": "COMMENTS",
+          "type": "cds.String",
+          "length": 250
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "type": "cds.String",
+          "length": 6
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "TIMES_PROCESSED": {
+          "@cds.persistence.name": "TIMES_PROCESSED",
+          "type": "cds.String",
+          "length": 34
+        },
+        "CLOSED_USER": {
+          "@cds.persistence.name": "CLOSED_USER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CLOSED_DATE_TIME": {
+          "@cds.persistence.name": "CLOSED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "FAILURE_ID": {
+          "@cds.persistence.name": "FAILURE_ID",
+          "type": "cds.String",
+          "length": 40
+        },
+        "VERIFIED_STATE": {
+          "@cds.persistence.name": "VERIFIED_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "NC_CATEGORY": {
+          "@cds.persistence.name": "NC_CATEGORY",
+          "type": "cds.String",
+          "length": 20
+        },
+        "VERIFIED_DATE_TIME": {
+          "@cds.persistence.name": "VERIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QUANT": {
+          "@cds.persistence.name": "QUANT",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "DEFECT_COUNT": {
+          "@cds.persistence.name": "DEFECT_COUNT",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.PARAMETRIC_MEASURE_CUSTOM_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "PARAMETRIC_MEASURE_CUSTOM",
+      "@cds.persistence.name": "GDHMESERVICE_PARAMETRIC_MEASURE_CUSTOM_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "PARAMETRIC_MEASURE_CUSTOM"
+            ],
+            "as": "PARAMETRIC_MEASURE_CUSTOM_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "CUSTOM_SEQUENCE": {
+          "@cds.persistence.name": "CUSTOM_SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROPERTY_NAME": {
+          "@cds.persistence.name": "PROPERTY_NAME",
+          "type": "cds.String",
+          "length": 25
+        },
+        "PROPERTY_VALUE": {
+          "@cds.persistence.name": "PROPERTY_VALUE",
+          "type": "cds.String",
+          "length": 25
+        },
+        "PROPERTY_TYPE": {
+          "@cds.persistence.name": "PROPERTY_TYPE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "PROPERTY_STATUS": {
+          "@cds.persistence.name": "PROPERTY_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "UNIT_OF_MEAS": {
+          "@cds.persistence.name": "UNIT_OF_MEAS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.PARAMETRIC_MEASURE_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "PARAMETRIC_MEASURE",
+      "@cds.persistence.name": "GDHMESERVICE_PARAMETRIC_MEASURE_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "PARAMETRIC_MEASURE"
+            ],
+            "as": "PARAMETRIC_MEASURE_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MEASURE_NAME": {
+          "@cds.persistence.name": "MEASURE_NAME",
+          "type": "cds.String",
+          "length": 30
+        },
+        "MEASURE_GROUP": {
+          "@cds.persistence.name": "MEASURE_GROUP",
+          "type": "cds.String",
+          "length": 25
+        },
+        "MEASURE_GROUP_REVISION": {
+          "@cds.persistence.name": "MEASURE_GROUP_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "DESCRIPTION": {
+          "@cds.persistence.name": "DESCRIPTION",
+          "type": "cds.String",
+          "length": 80
+        },
+        "MEASURE_STATUS": {
+          "@cds.persistence.name": "MEASURE_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "MEMO": {
+          "@cds.persistence.name": "MEMO",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MEASURE_TYPE": {
+          "@cds.persistence.name": "MEASURE_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "UNIT_OF_MEAS": {
+          "@cds.persistence.name": "UNIT_OF_MEAS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "DATA_TYPE": {
+          "@cds.persistence.name": "DATA_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "HIGH_LIMIT": {
+          "@cds.persistence.name": "HIGH_LIMIT",
+          "type": "cds.String",
+          "length": 100
+        },
+        "LOW_LIMIT": {
+          "@cds.persistence.name": "LOW_LIMIT",
+          "type": "cds.String",
+          "length": 100
+        },
+        "EXPECTED": {
+          "@cds.persistence.name": "EXPECTED",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACTUAL": {
+          "@cds.persistence.name": "ACTUAL",
+          "type": "cds.String",
+          "length": 250
+        },
+        "DC_COMMENT": {
+          "@cds.persistence.name": "DC_COMMENT",
+          "type": "cds.String",
+          "length": 20
+        },
+        "DC_PARAMETER": {
+          "@cds.persistence.name": "DC_PARAMETER",
+          "type": "cds.String",
+          "length": 30
+        },
+        "TEST_DATE_TIME": {
+          "@cds.persistence.name": "TEST_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.PARAMETRIC_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "PARAMETRIC",
+      "@cds.persistence.name": "GDHMESERVICE_PARAMETRIC_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "PARAMETRIC"
+            ],
+            "as": "PARAMETRIC_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "ELAPSED_TIME": {
+          "@cds.persistence.name": "ELAPSED_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ROUTER_SEQUENCE": {
+          "@cds.persistence.name": "ROUTER_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "TYPE": {
+          "@cds.persistence.name": "TYPE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "START_TIME": {
+          "@cds.persistence.name": "START_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "STOP_TIME": {
+          "@cds.persistence.name": "STOP_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "type": "cds.String",
+          "length": 50
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CUSTOMER_ID": {
+          "@cds.persistence.name": "CUSTOMER_ID",
+          "type": "cds.String",
+          "length": 50
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REV": {
+          "@cds.persistence.name": "OPERATION_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "LOT_ID": {
+          "@cds.persistence.name": "LOT_ID",
+          "type": "cds.String",
+          "length": 32
+        },
+        "PROGRAM_ID": {
+          "@cds.persistence.name": "PROGRAM_ID",
+          "type": "cds.String",
+          "length": 32
+        },
+        "PROGRAM_REV": {
+          "@cds.persistence.name": "PROGRAM_REV",
+          "type": "cds.String",
+          "length": 10
+        },
+        "TEST_STATUS": {
+          "@cds.persistence.name": "TEST_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "TEST_PASSED": {
+          "@cds.persistence.name": "TEST_PASSED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DC_GROUP": {
+          "@cds.persistence.name": "DC_GROUP",
+          "type": "cds.String",
+          "length": 20
+        },
+        "ORIGINAL_SFC": {
+          "@cds.persistence.name": "ORIGINAL_SFC",
+          "type": "cds.String",
+          "length": 250
+        },
+        "ORIGINAL_TRANSFER_KEY": {
+          "@cds.persistence.name": "ORIGINAL_TRANSFER_KEY",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_ASSY_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC_ASSY_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_ASSY_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC_ASSY_DATA"
+            ],
+            "as": "SFC_ASSY_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "ASSEMBLY_ID": {
+          "@cds.persistence.name": "ASSEMBLY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "type": "cds.String",
+          "length": 60
+        },
+        "DATA_ATTR": {
+          "@cds.persistence.name": "DATA_ATTR",
+          "type": "cds.String",
+          "length": 250
+        },
+        "ASSEMBLED_DATE": {
+          "@cds.persistence.name": "ASSEMBLED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_ASSY_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC_ASSY",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_ASSY_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC_ASSY"
+            ],
+            "as": "SFC_ASSY_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "ASSY_ID": {
+          "@cds.persistence.name": "ASSY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "INVENTORY_ID": {
+          "@cds.persistence.name": "INVENTORY_ID",
+          "type": "cds.String",
+          "length": 128
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "type": "cds.String",
+          "length": 36
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "BOM": {
+          "@cds.persistence.name": "BOM",
+          "type": "cds.String",
+          "length": 40
+        },
+        "BOM_TYPE": {
+          "@cds.persistence.name": "BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BOM_REVISION": {
+          "@cds.persistence.name": "BOM_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "BOM_COMPONENT_GBO": {
+          "@cds.persistence.name": "BOM_COMPONENT_GBO",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ASSEMBLED_BY": {
+          "@cds.persistence.name": "ASSEMBLED_BY",
+          "type": "cds.String",
+          "length": 12
+        },
+        "ASSEMBLED_DATE": {
+          "@cds.persistence.name": "ASSEMBLED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "REMOVED": {
+          "@cds.persistence.name": "REMOVED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "REMOVED_DATE": {
+          "@cds.persistence.name": "REMOVED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "REMOVED_BY": {
+          "@cds.persistence.name": "REMOVED_BY",
+          "type": "cds.String",
+          "length": 12
+        },
+        "REMOVED_OPERATION": {
+          "@cds.persistence.name": "REMOVED_OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "REMOVED_OPERATION_REV": {
+          "@cds.persistence.name": "REMOVED_OPERATION_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "REMOVED_RESOURCE": {
+          "@cds.persistence.name": "REMOVED_RESOURCE",
+          "type": "cds.String",
+          "length": 30
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_DATA_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC_DATA",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_DATA_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC_DATA"
+            ],
+            "as": "SFC_DATA_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_ATTR": {
+          "@cds.persistence.name": "DATA_ATTR",
+          "type": "cds.String",
+          "length": 250
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_LOCATION_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC_LOCATION",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_LOCATION_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC_LOCATION"
+            ],
+            "as": "SFC_LOCATION_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SERIAL_NUMBER": {
+          "@cds.persistence.name": "SERIAL_NUMBER",
+          "type": "cds.String",
+          "length": 128
+        },
+        "LOCATION_STATE": {
+          "@cds.persistence.name": "LOCATION_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC"
+            ],
+            "as": "SFC_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER_PADDED": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_PADDED",
+          "type": "cds.String",
+          "length": 12
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTUAL_COMP_DATE": {
+          "@cds.persistence.name": "ACTUAL_COMP_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_DONE": {
+          "@cds.persistence.name": "QTY_DONE",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_SCRAPPED": {
+          "@cds.persistence.name": "QTY_SCRAPPED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SFC_STEP_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SFC_STEP",
+      "@cds.persistence.name": "GDHMESERVICE_SFC_STEP_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SFC_STEP"
+            ],
+            "as": "SFC_STEP_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "STEP_SEQUENCE": {
+          "@cds.persistence.name": "STEP_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "DONE": {
+          "@cds.persistence.name": "DONE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BYPASSED": {
+          "@cds.persistence.name": "BYPASSED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "USE_AS_REWORK": {
+          "@cds.persistence.name": "USE_AS_REWORK",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREVIOUSLY_STARTED": {
+          "@cds.persistence.name": "PREVIOUSLY_STARTED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "LAST_WORK_CENTER_BO": {
+          "@cds.persistence.name": "LAST_WORK_CENTER_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "LAST_WORK_CENTER_BO2": {
+          "@cds.persistence.name": "LAST_WORK_CENTER_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_STEP_ID": {
+          "@cds.persistence.name": "PREVIOUS_STEP_ID",
+          "type": "cds.String",
+          "length": 6
+        },
+        "REPORTING_STEP": {
+          "@cds.persistence.name": "REPORTING_STEP",
+          "type": "cds.String",
+          "length": 36
+        },
+        "RESOURCE_OR_CENTER_GBO": {
+          "@cds.persistence.name": "RESOURCE_OR_CENTER_GBO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "RESOURCE_OR_CENTER_GBO2": {
+          "@cds.persistence.name": "RESOURCE_OR_CENTER_GBO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "REPORTING_CENTER_BO": {
+          "@cds.persistence.name": "REPORTING_CENTER_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "REPORTING_CENTER_BO2": {
+          "@cds.persistence.name": "REPORTING_CENTER_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_RESOURCE_BO": {
+          "@cds.persistence.name": "PREVIOUS_RESOURCE_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_RESOURCE_BO2": {
+          "@cds.persistence.name": "PREVIOUS_RESOURCE_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "MULTI_Q_SIGNOFF_NEEDED": {
+          "@cds.persistence.name": "MULTI_Q_SIGNOFF_NEEDED",
+          "type": "cds.String",
+          "length": 5
+        },
+        "STEP_PULLED_INTO": {
+          "@cds.persistence.name": "STEP_PULLED_INTO",
+          "type": "cds.String",
+          "length": 6
+        },
+        "LOCAL_REWORK": {
+          "@cds.persistence.name": "LOCAL_REWORK",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SPECIAL_INSTRUCTION": {
+          "@cds.persistence.name": "SPECIAL_INSTRUCTION",
+          "type": "cds.String",
+          "length": 128
+        },
+        "ERP_SENT": {
+          "@cds.persistence.name": "ERP_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "SCRAP_REPORTING_STEP": {
+          "@cds.persistence.name": "SCRAP_REPORTING_STEP",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DATE_QUEUED": {
+          "@cds.persistence.name": "DATE_QUEUED",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ERP_TB_SENT": {
+          "@cds.persistence.name": "ERP_TB_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "EWM_TB_SENT": {
+          "@cds.persistence.name": "EWM_TB_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "PROC_TIME_UNIT": {
+          "@cds.persistence.name": "PROC_TIME_UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY_IN_QUEUE": {
+          "@cds.persistence.name": "QTY_IN_QUEUE",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_IN_WORK": {
+          "@cds.persistence.name": "QTY_IN_WORK",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_COMPLETED": {
+          "@cds.persistence.name": "QTY_COMPLETED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "TIMES_PROCESSED": {
+          "@cds.persistence.name": "TIMES_PROCESSED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "MAX_LOOP": {
+          "@cds.persistence.name": "MAX_LOOP",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "FUTURE_HOLD_COUNT": {
+          "@cds.persistence.name": "FUTURE_HOLD_COUNT",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_COMPLETE_PENDING": {
+          "@cds.persistence.name": "QTY_COMPLETE_PENDING",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_REJECTED": {
+          "@cds.persistence.name": "QTY_REJECTED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.Integer"
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.SHOP_ORDER_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "SHOP_ORDER",
+      "@cds.persistence.name": "GDHMESERVICE_SHOP_ORDER_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SHOP_ORDER"
+            ],
+            "as": "SHOP_ORDER_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "PRODUCTION_ORDER_PADDED": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 12
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_ORDER": {
+          "@cds.persistence.name": "ERP_ORDER",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER_TYPE": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "PLANNED_ROUTER": {
+          "@cds.persistence.name": "PLANNED_ROUTER",
+          "type": "cds.String",
+          "length": 20
+        },
+        "PLANNED_ROUTER_REV": {
+          "@cds.persistence.name": "PLANNED_ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "PLANNED_ROUTER_TYPE": {
+          "@cds.persistence.name": "PLANNED_ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BOM": {
+          "@cds.persistence.name": "BOM",
+          "type": "cds.String",
+          "length": 18
+        },
+        "BOM_REV": {
+          "@cds.persistence.name": "BOM_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "BOM_TYPE": {
+          "@cds.persistence.name": "BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PLANNED_START_DATE": {
+          "@cds.persistence.name": "PLANNED_START_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PLANNED_COMPLETION_DATE": {
+          "@cds.persistence.name": "PLANNED_COMPLETION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ACTUAL_START_DATE": {
+          "@cds.persistence.name": "ACTUAL_START_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ACTUAL_COMPLETION_DATE": {
+          "@cds.persistence.name": "ACTUAL_COMPLETION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PLANNED_MATERIAL": {
+          "@cds.persistence.name": "PLANNED_MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "PLANNED_MATERIAL_REV": {
+          "@cds.persistence.name": "PLANNED_MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PLANNED_BOM": {
+          "@cds.persistence.name": "PLANNED_BOM",
+          "type": "cds.String",
+          "length": 40
+        },
+        "PLANNED_BOM_REV": {
+          "@cds.persistence.name": "PLANNED_BOM_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PLANNED_BOM_TYPE": {
+          "@cds.persistence.name": "PLANNED_BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_UNIT": {
+          "@cds.persistence.name": "ERP_UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY_TO_BUILD": {
+          "@cds.persistence.name": "QTY_TO_BUILD",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_ORDERED": {
+          "@cds.persistence.name": "QTY_ORDERED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_RELEASED": {
+          "@cds.persistence.name": "QTY_RELEASED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_DONE": {
+          "@cds.persistence.name": "QTY_DONE",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_SCRAPPED": {
+          "@cds.persistence.name": "QTY_SCRAPPED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
+    "INVENTORY_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "INVENTORY_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "INVENTORY_ID": {
+          "@cds.persistence.name": "INVENTORY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "DESCRIPTION": {
+          "@cds.persistence.name": "DESCRIPTION",
+          "type": "cds.String",
+          "length": 80
+        },
+        "USAGE_COUNT": {
+          "@cds.persistence.name": "USAGE_COUNT",
+          "type": "cds.String",
+          "length": 31
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "ORIGINAL_USER": {
+          "@cds.persistence.name": "ORIGINAL_USER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "HAS_BEEN_USED": {
+          "@cds.persistence.name": "HAS_BEEN_USED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_INVENTORY": {
+          "@cds.persistence.name": "ERP_INVENTORY",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECEIVE_DATE_TIME": {
+          "@cds.persistence.name": "RECEIVE_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PARENT_INVENTORY": {
+          "@cds.persistence.name": "PARENT_INVENTORY",
+          "type": "cds.String",
+          "length": 250
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY_ON_HAND": {
+          "@cds.persistence.name": "QTY_ON_HAND",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "ORGINAL_QTY": {
+          "@cds.persistence.name": "ORGINAL_QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      }
+    },
+    "NC_CUSTOM_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "NC_CUSTOM_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_ATTRIBUTE": {
+          "@cds.persistence.name": "DATA_ATTRIBUTE",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "NC_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "NC_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "INCIDENT_DATE_TIME": {
+          "@cds.persistence.name": "INCIDENT_DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PARENT_SFC": {
+          "@cds.persistence.name": "PARENT_SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "PARENT_USER": {
+          "@cds.persistence.name": "PARENT_USER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CUSTOM_SEQUENCE": {
+          "@cds.persistence.name": "CUSTOM_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "NC_STATE": {
+          "@cds.persistence.name": "NC_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "NC_CODE": {
+          "@cds.persistence.name": "NC_CODE",
+          "type": "cds.String",
+          "length": 16
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "COMPONENT_CONTEXT": {
+          "@cds.persistence.name": "COMPONENT_CONTEXT",
+          "type": "cds.String",
+          "length": 250
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "type": "cds.String",
+          "length": 36
+        },
+        "COMMENTS": {
+          "@cds.persistence.name": "COMMENTS",
+          "type": "cds.String",
+          "length": 250
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "type": "cds.String",
+          "length": 6
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "TIMES_PROCESSED": {
+          "@cds.persistence.name": "TIMES_PROCESSED",
+          "type": "cds.String",
+          "length": 34
+        },
+        "CLOSED_USER": {
+          "@cds.persistence.name": "CLOSED_USER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CLOSED_DATE_TIME": {
+          "@cds.persistence.name": "CLOSED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "FAILURE_ID": {
+          "@cds.persistence.name": "FAILURE_ID",
+          "type": "cds.String",
+          "length": 40
+        },
+        "VERIFIED_STATE": {
+          "@cds.persistence.name": "VERIFIED_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "NC_CATEGORY": {
+          "@cds.persistence.name": "NC_CATEGORY",
+          "type": "cds.String",
+          "length": 20
+        },
+        "VERIFIED_DATE_TIME": {
+          "@cds.persistence.name": "VERIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QUANT": {
+          "@cds.persistence.name": "QUANT",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "DEFECT_COUNT": {
+          "@cds.persistence.name": "DEFECT_COUNT",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        }
+      }
+    },
+    "NC_DATA_REF_DES": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "NC_DATA_REF_DES",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ASSEMBLY_ID": {
+          "@cds.persistence.name": "ASSEMBLY_ID",
+          "type": "cds.String",
+          "length": 4
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "PARAMETRIC": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "PARAMETRIC",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "type": "cds.String",
+          "length": 13
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "ELAPSED_TIME": {
+          "@cds.persistence.name": "ELAPSED_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ROUTER_SEQUENCE": {
+          "@cds.persistence.name": "ROUTER_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "TYPE": {
+          "@cds.persistence.name": "TYPE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "START_TIME": {
+          "@cds.persistence.name": "START_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "STOP_TIME": {
+          "@cds.persistence.name": "STOP_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "type": "cds.String",
+          "length": 50
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CUSTOMER_ID": {
+          "@cds.persistence.name": "CUSTOMER_ID",
+          "type": "cds.String",
+          "length": 50
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REV": {
+          "@cds.persistence.name": "OPERATION_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "LOT_ID": {
+          "@cds.persistence.name": "LOT_ID",
+          "type": "cds.String",
+          "length": 32
+        },
+        "PROGRAM_ID": {
+          "@cds.persistence.name": "PROGRAM_ID",
+          "type": "cds.String",
+          "length": 32
+        },
+        "PROGRAM_REV": {
+          "@cds.persistence.name": "PROGRAM_REV",
+          "type": "cds.String",
+          "length": 10
+        },
+        "TEST_STATUS": {
+          "@cds.persistence.name": "TEST_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "TEST_PASSED": {
+          "@cds.persistence.name": "TEST_PASSED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DC_GROUP": {
+          "@cds.persistence.name": "DC_GROUP",
+          "type": "cds.String",
+          "length": 20
+        },
+        "ORIGINAL_SFC": {
+          "@cds.persistence.name": "ORIGINAL_SFC",
+          "type": "cds.String",
+          "length": 250
+        },
+        "ORIGINAL_TRANSFER_KEY": {
+          "@cds.persistence.name": "ORIGINAL_TRANSFER_KEY",
+          "type": "cds.String",
+          "length": 250
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "PARAMETRIC_MEASURE": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "PARAMETRIC_MEASURE",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MEASURE_NAME": {
+          "@cds.persistence.name": "MEASURE_NAME",
+          "type": "cds.String",
+          "length": 30
+        },
+        "MEASURE_GROUP": {
+          "@cds.persistence.name": "MEASURE_GROUP",
+          "type": "cds.String",
+          "length": 25
+        },
+        "MEASURE_GROUP_REVISION": {
+          "@cds.persistence.name": "MEASURE_GROUP_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "DESCRIPTION": {
+          "@cds.persistence.name": "DESCRIPTION",
+          "type": "cds.String",
+          "length": 80
+        },
+        "MEASURE_STATUS": {
+          "@cds.persistence.name": "MEASURE_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "MEMO": {
+          "@cds.persistence.name": "MEMO",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MEASURE_TYPE": {
+          "@cds.persistence.name": "MEASURE_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "UNIT_OF_MEAS": {
+          "@cds.persistence.name": "UNIT_OF_MEAS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "DATA_TYPE": {
+          "@cds.persistence.name": "DATA_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "HIGH_LIMIT": {
+          "@cds.persistence.name": "HIGH_LIMIT",
+          "type": "cds.String",
+          "length": 100
+        },
+        "LOW_LIMIT": {
+          "@cds.persistence.name": "LOW_LIMIT",
+          "type": "cds.String",
+          "length": 100
+        },
+        "EXPECTED": {
+          "@cds.persistence.name": "EXPECTED",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACTUAL": {
+          "@cds.persistence.name": "ACTUAL",
+          "type": "cds.String",
+          "length": 250
+        },
+        "DC_COMMENT": {
+          "@cds.persistence.name": "DC_COMMENT",
+          "type": "cds.String",
+          "length": 20
+        },
+        "DC_PARAMETER": {
+          "@cds.persistence.name": "DC_PARAMETER",
+          "type": "cds.String",
+          "length": 30
+        },
+        "TEST_DATE_TIME": {
+          "@cds.persistence.name": "TEST_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "PARAMETRIC_MEASURE_CUSTOM": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "PARAMETRIC_MEASURE_CUSTOM",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "TRANSACTION_ID": {
+          "@cds.persistence.name": "TRANSACTION_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 38
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "CUSTOM_SEQUENCE": {
+          "@cds.persistence.name": "CUSTOM_SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROPERTY_NAME": {
+          "@cds.persistence.name": "PROPERTY_NAME",
+          "type": "cds.String",
+          "length": 25
+        },
+        "PROPERTY_VALUE": {
+          "@cds.persistence.name": "PROPERTY_VALUE",
+          "type": "cds.String",
+          "length": 25
+        },
+        "PROPERTY_TYPE": {
+          "@cds.persistence.name": "PROPERTY_TYPE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "PROPERTY_STATUS": {
+          "@cds.persistence.name": "PROPERTY_STATUS",
+          "type": "cds.String",
+          "length": 10
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "UNIT_OF_MEAS": {
+          "@cds.persistence.name": "UNIT_OF_MEAS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "SFC": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER_PADDED": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_PADDED",
+          "type": "cds.String",
+          "length": 12
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "type": "cds.String",
+          "length": 36
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTUAL_COMP_DATE": {
+          "@cds.persistence.name": "ACTUAL_COMP_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_DONE": {
+          "@cds.persistence.name": "QTY_DONE",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_SCRAPPED": {
+          "@cds.persistence.name": "QTY_SCRAPPED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      }
+    },
+    "SFC_ASSY": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC_ASSY",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "ASSY_ID": {
+          "@cds.persistence.name": "ASSY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REVISION": {
+          "@cds.persistence.name": "MATERIAL_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "INVENTORY_ID": {
+          "@cds.persistence.name": "INVENTORY_ID",
+          "type": "cds.String",
+          "length": 128
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "REF_DES": {
+          "@cds.persistence.name": "REF_DES",
+          "type": "cds.String",
+          "length": 36
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 2
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "BOM": {
+          "@cds.persistence.name": "BOM",
+          "type": "cds.String",
+          "length": 40
+        },
+        "BOM_TYPE": {
+          "@cds.persistence.name": "BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BOM_REVISION": {
+          "@cds.persistence.name": "BOM_REVISION",
+          "type": "cds.String",
+          "length": 5
+        },
+        "BOM_COMPONENT_GBO": {
+          "@cds.persistence.name": "BOM_COMPONENT_GBO",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ASSEMBLED_BY": {
+          "@cds.persistence.name": "ASSEMBLED_BY",
+          "type": "cds.String",
+          "length": 12
+        },
+        "ASSEMBLED_DATE": {
+          "@cds.persistence.name": "ASSEMBLED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "REMOVED": {
+          "@cds.persistence.name": "REMOVED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "REMOVED_DATE": {
+          "@cds.persistence.name": "REMOVED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "REMOVED_BY": {
+          "@cds.persistence.name": "REMOVED_BY",
+          "type": "cds.String",
+          "length": 12
+        },
+        "REMOVED_OPERATION": {
+          "@cds.persistence.name": "REMOVED_OPERATION",
+          "type": "cds.String",
+          "length": 60
+        },
+        "REMOVED_OPERATION_REV": {
+          "@cds.persistence.name": "REMOVED_OPERATION_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "REMOVED_RESOURCE": {
+          "@cds.persistence.name": "REMOVED_RESOURCE",
+          "type": "cds.String",
+          "length": 30
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "SFC_ASSY_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC_ASSY_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "ASSEMBLY_ID": {
+          "@cds.persistence.name": "ASSEMBLY_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "COMPONENT": {
+          "@cds.persistence.name": "COMPONENT",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "COMPONENT_REVISION": {
+          "@cds.persistence.name": "COMPONENT_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 31
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "type": "cds.String",
+          "length": 60
+        },
+        "DATA_ATTR": {
+          "@cds.persistence.name": "DATA_ATTR",
+          "type": "cds.String",
+          "length": 250
+        },
+        "ASSEMBLED_DATE": {
+          "@cds.persistence.name": "ASSEMBLED_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "SFC_DATA": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC_DATA",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "DATA_FIELD": {
+          "@cds.persistence.name": "DATA_FIELD",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "DATA_ATTR": {
+          "@cds.persistence.name": "DATA_ATTR",
+          "type": "cds.String",
+          "length": 250
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "type": "cds.String",
+          "length": 36
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "SFC_LOCATION": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC_LOCATION",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "LOCATION": {
+          "@cds.persistence.name": "LOCATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SERIAL_NUMBER": {
+          "@cds.persistence.name": "SERIAL_NUMBER",
+          "type": "cds.String",
+          "length": 128
+        },
+        "LOCATION_STATE": {
+          "@cds.persistence.name": "LOCATION_STATE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        }
+      }
+    },
+    "SFC_STEP": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SFC_STEP",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "STEP_SEQUENCE": {
+          "@cds.persistence.name": "STEP_SEQUENCE",
+          "type": "cds.String",
+          "length": 31
+        },
+        "DONE": {
+          "@cds.persistence.name": "DONE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BYPASSED": {
+          "@cds.persistence.name": "BYPASSED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "USE_AS_REWORK": {
+          "@cds.persistence.name": "USE_AS_REWORK",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREVIOUSLY_STARTED": {
+          "@cds.persistence.name": "PREVIOUSLY_STARTED",
+          "type": "cds.String",
+          "length": 1
+        },
+        "LAST_WORK_CENTER_BO": {
+          "@cds.persistence.name": "LAST_WORK_CENTER_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "LAST_WORK_CENTER_BO2": {
+          "@cds.persistence.name": "LAST_WORK_CENTER_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_STEP_ID": {
+          "@cds.persistence.name": "PREVIOUS_STEP_ID",
+          "type": "cds.String",
+          "length": 6
+        },
+        "REPORTING_STEP": {
+          "@cds.persistence.name": "REPORTING_STEP",
+          "type": "cds.String",
+          "length": 36
+        },
+        "RESOURCE_OR_CENTER_GBO": {
+          "@cds.persistence.name": "RESOURCE_OR_CENTER_GBO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "RESOURCE_OR_CENTER_GBO2": {
+          "@cds.persistence.name": "RESOURCE_OR_CENTER_GBO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "STATE": {
+          "@cds.persistence.name": "STATE",
+          "type": "cds.String",
+          "length": 10
+        },
+        "REPORTING_CENTER_BO": {
+          "@cds.persistence.name": "REPORTING_CENTER_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "REPORTING_CENTER_BO2": {
+          "@cds.persistence.name": "REPORTING_CENTER_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_RESOURCE_BO": {
+          "@cds.persistence.name": "PREVIOUS_RESOURCE_BO",
+          "type": "cds.String",
+          "length": 206
+        },
+        "PREVIOUS_RESOURCE_BO2": {
+          "@cds.persistence.name": "PREVIOUS_RESOURCE_BO2",
+          "type": "cds.String",
+          "length": 206
+        },
+        "MULTI_Q_SIGNOFF_NEEDED": {
+          "@cds.persistence.name": "MULTI_Q_SIGNOFF_NEEDED",
+          "type": "cds.String",
+          "length": 5
+        },
+        "STEP_PULLED_INTO": {
+          "@cds.persistence.name": "STEP_PULLED_INTO",
+          "type": "cds.String",
+          "length": 6
+        },
+        "LOCAL_REWORK": {
+          "@cds.persistence.name": "LOCAL_REWORK",
+          "type": "cds.String",
+          "length": 1
+        },
+        "SPECIAL_INSTRUCTION": {
+          "@cds.persistence.name": "SPECIAL_INSTRUCTION",
+          "type": "cds.String",
+          "length": 128
+        },
+        "ERP_SENT": {
+          "@cds.persistence.name": "ERP_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "SCRAP_REPORTING_STEP": {
+          "@cds.persistence.name": "SCRAP_REPORTING_STEP",
+          "type": "cds.String",
+          "length": 36
+        },
+        "DATE_QUEUED": {
+          "@cds.persistence.name": "DATE_QUEUED",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ERP_TB_SENT": {
+          "@cds.persistence.name": "ERP_TB_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "EWM_TB_SENT": {
+          "@cds.persistence.name": "EWM_TB_SENT",
+          "type": "cds.String",
+          "length": 5
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "PROC_TIME_UNIT": {
+          "@cds.persistence.name": "PROC_TIME_UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY_IN_QUEUE": {
+          "@cds.persistence.name": "QTY_IN_QUEUE",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_IN_WORK": {
+          "@cds.persistence.name": "QTY_IN_WORK",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_COMPLETED": {
+          "@cds.persistence.name": "QTY_COMPLETED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "TIMES_PROCESSED": {
+          "@cds.persistence.name": "TIMES_PROCESSED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "MAX_LOOP": {
+          "@cds.persistence.name": "MAX_LOOP",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "FUTURE_HOLD_COUNT": {
+          "@cds.persistence.name": "FUTURE_HOLD_COUNT",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_COMPLETE_PENDING": {
+          "@cds.persistence.name": "QTY_COMPLETE_PENDING",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "QTY_REJECTED": {
+          "@cds.persistence.name": "QTY_REJECTED",
+          "type": "cds.Decimal",
+          "precision": 17,
+          "scale": 3
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "SHOP_ORDER": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "SHOP_ORDER",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "PRODUCTION_ORDER_PADDED": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 12
+        },
+        "RECORDMODE": {
+          "@cds.persistence.name": "RECORDMODE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_ORDER": {
+          "@cds.persistence.name": "ERP_ORDER",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PRODUCTION_ORDER_TYPE": {
+          "@cds.persistence.name": "PRODUCTION_ORDER_TYPE",
+          "type": "cds.String",
+          "length": 20
+        },
+        "STATUS": {
+          "@cds.persistence.name": "STATUS",
+          "type": "cds.String",
+          "length": 20
+        },
+        "PLANNED_ROUTER": {
+          "@cds.persistence.name": "PLANNED_ROUTER",
+          "type": "cds.String",
+          "length": 20
+        },
+        "PLANNED_ROUTER_REV": {
+          "@cds.persistence.name": "PLANNED_ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "PLANNED_ROUTER_TYPE": {
+          "@cds.persistence.name": "PLANNED_ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "BOM": {
+          "@cds.persistence.name": "BOM",
+          "type": "cds.String",
+          "length": 18
+        },
+        "BOM_REV": {
+          "@cds.persistence.name": "BOM_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "BOM_TYPE": {
+          "@cds.persistence.name": "BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "PLANNED_START_DATE": {
+          "@cds.persistence.name": "PLANNED_START_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PLANNED_COMPLETION_DATE": {
+          "@cds.persistence.name": "PLANNED_COMPLETION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ACTUAL_START_DATE": {
+          "@cds.persistence.name": "ACTUAL_START_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "ACTUAL_COMPLETION_DATE": {
+          "@cds.persistence.name": "ACTUAL_COMPLETION_DATE",
+          "type": "cds.String",
+          "length": 14
+        },
+        "CREATED_DATE_TIME": {
+          "@cds.persistence.name": "CREATED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "MODIFIED_DATE_TIME": {
+          "@cds.persistence.name": "MODIFIED_DATE_TIME",
+          "type": "cds.String",
+          "length": 14
+        },
+        "PLANNED_MATERIAL": {
+          "@cds.persistence.name": "PLANNED_MATERIAL",
+          "type": "cds.String",
+          "length": 18
+        },
+        "PLANNED_MATERIAL_REV": {
+          "@cds.persistence.name": "PLANNED_MATERIAL_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PLANNED_BOM": {
+          "@cds.persistence.name": "PLANNED_BOM",
+          "type": "cds.String",
+          "length": 40
+        },
+        "PLANNED_BOM_REV": {
+          "@cds.persistence.name": "PLANNED_BOM_REV",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PLANNED_BOM_TYPE": {
+          "@cds.persistence.name": "PLANNED_BOM_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "ERP_UNIT": {
+          "@cds.persistence.name": "ERP_UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "type": "cds.String",
+          "length": 8
+        },
+        "QTY_TO_BUILD": {
+          "@cds.persistence.name": "QTY_TO_BUILD",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_ORDERED": {
+          "@cds.persistence.name": "QTY_ORDERED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_RELEASED": {
+          "@cds.persistence.name": "QTY_RELEASED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_DONE": {
+          "@cds.persistence.name": "QTY_DONE",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "QTY_SCRAPPED": {
+          "@cds.persistence.name": "QTY_SCRAPPED",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.19.2"
+  },
+  "$version": "1.0",
+  "@sql_mapping": "plain"
+}
