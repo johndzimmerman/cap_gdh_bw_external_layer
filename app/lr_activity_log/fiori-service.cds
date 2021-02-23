@@ -5,6 +5,11 @@ using GDHMEService as service from '../../srv/me-services';
 //	T_ACTIVITY_LOG List Report Page
 //
 annotate service.ACTIVITY_LOG_SRV with @UI : { 
+    HeaderInfo  : {
+        $Type : 'UI.HeaderInfoType',
+        TypeName : 'xxxx',
+        TypeNamePlural : 'yyyy',
+    },
     SelectionFields  : [ PLANT, SFC, OPERATION, RESRCE, MATERIAL, ACTION_CODE ], 
     LineItem  : [
           {Value : PLANT},

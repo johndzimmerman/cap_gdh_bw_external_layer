@@ -99,7 +99,10 @@
 				"entitySet": "ACTIVITY_LOG_SRV",
 				"component": {
 					"name": "sap.suite.ui.generic.template.ListReport",
-					"list": true
+					"list": true,
+					"settings": {
+                        "smartVariantManagement": true
+                    }
 				},
 				"pages": [
 					{

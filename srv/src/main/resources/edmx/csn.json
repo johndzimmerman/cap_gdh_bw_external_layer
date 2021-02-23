@@ -585,6 +585,9 @@
       "@Capabilities.InsertRestrictions.Insertable": false,
       "@Capabilities.UpdateRestrictions.Updatable": false,
       "@Common.Label": "ACTIVITY_LOG",
+      "@UI.HeaderInfo.$Type": "UI.HeaderInfoType",
+      "@UI.HeaderInfo.TypeName": "xxxx",
+      "@UI.HeaderInfo.TypeNamePlural": "yyyy",
       "@UI.LineItem": [
         {
           "Value": {

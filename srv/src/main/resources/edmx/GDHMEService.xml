@@ -756,6 +756,12 @@
       </EntityType>
       <Annotations Target="GDHMEService.ACTIVITY_LOG_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="ACTIVITY_LOG"/>
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="xxxx"/>
+            <PropertyValue Property="TypeNamePlural" String="yyyy"/>
+          </Record>
+        </Annotation>
         <Annotation Term="UI.LineItem">
           <Collection>
             <Record Type="UI.DataField">
