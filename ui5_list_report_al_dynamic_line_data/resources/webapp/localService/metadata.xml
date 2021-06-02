@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0" xmlns:sap="http://www.sap.com/Protocols/SAPData"
+	xmlns:ux="http://www.sap.com/Protocols/OData4SAP/UX" xmlns:gp="http://www.sap.com/Protocols/SAPData/GenericPlayer">
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml"><edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2"><edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml"><edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2"><edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+		<Schema Namespace="GDHMEALDYNAMICLINEService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="EDGES_SRV">
+				<Key><PropertyRef Name="EDGE_ID"/></Key><Property Name="EDGE_ID" Type="Edm.String" Nullable="false" MaxLength="500"/><Property Name="LINE_KEY" Type="Edm.String" MaxLength="100"/><Property Name="START_NODE" Type="Edm.String" MaxLength="500"/><Property Name="END_NODE" Type="Edm.String" MaxLength="500"/><Property Name="DS_MAX" Type="Edm.Int32"/><Property Name="DS_MIN" Type="Edm.Int32"/><Property Name="DS_AVG" Type="Edm.Decimal" Precision="34" Scale="0"/><Property Name="DS_MEDIAN" Type="Edm.Decimal" Precision="34" Scale="0"/><Property Name="DS_STTDEV" Type="Edm.Decimal" Precision="34" Scale="0"/><Property Name="DS_VAR" Type="Edm.Double"/></EntityType>
+			<EntityType Name="LINES_SRV">
+				<Key><PropertyRef Name="LINE_KEY"/></Key><Property Name="LINE_KEY" Type="Edm.String" Nullable="false" MaxLength="100"/><Property Name="SFC_VOLUME" Type="Edm.Int32"/></EntityType>
+			<EntityType Name="VERTICES_SRV">
+				<Key><PropertyRef Name="NODE_ID"/></Key><Property Name="NODE_ID" Type="Edm.String" Nullable="false" MaxLength="500"/><Property Name="LINE_KEY" Type="Edm.String" MaxLength="100"/><Property Name="RESRCE" Type="Edm.String" MaxLength="36"/><Property Name="OPERATION" Type="Edm.String" MaxLength="36"/><Property Name="SFC_VOLUME" Type="Edm.Int32"/><Property Name="SEQUENCE" Type="Edm.Int32"/></EntityType>
+			<EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true"><EntitySet Name="EDGES_SRV" EntityType="GDHMEALDYNAMICLINEService.EDGES_SRV"/><EntitySet Name="LINES_SRV" EntityType="GDHMEALDYNAMICLINEService.LINES_SRV"/><EntitySet Name="VERTICES_SRV" EntityType="GDHMEALDYNAMICLINEService.VERTICES_SRV"/></EntityContainer>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.EDGES_SRV"><Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="EDGES"/></Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.EntityContainer/EDGES_SRV">
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.DeleteRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.DeleteRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Deletable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.InsertRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.InsertRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Insertable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.UpdateRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.UpdateRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Updatable" Bool="false"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.LINES_SRV"><Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="LINES"/>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.HeaderInfo">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.HeaderInfoType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="TypeName" String="LINE"/><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="TypeNamePlural" String="ALINES"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.LineItem">
+					<Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+						<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="LINE_KEY"/></Record>
+						<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="SFC_VOLUME"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.SelectionFields">
+					<Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+						<PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">LINE_KEY</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.EntityContainer/LINES_SRV">
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.DeleteRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.DeleteRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Deletable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.InsertRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.InsertRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Insertable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.UpdateRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.UpdateRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Updatable" Bool="false"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.LINES_SRV/SFC_VOLUME"><Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Computed" Bool="true"/></Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.VERTICES_SRV"><Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="VERTICES"/></Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="GDHMEALDYNAMICLINEService.EntityContainer/VERTICES_SRV">
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.DeleteRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.DeleteRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Deletable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.InsertRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.InsertRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Insertable" Bool="false"/></Record>
+				</Annotation>
+				<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Capabilities.UpdateRestrictions">
+					<Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Capabilities.UpdateRestrictionsType"><PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Updatable" Bool="false"/></Record>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

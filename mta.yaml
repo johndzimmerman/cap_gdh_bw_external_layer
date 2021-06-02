@@ -1,5 +1,5 @@
 ID: cap_gdh_bw_external_layer
-_schema-version: "2.1"
+_schema-version: '2.1'
 description: Wrap the BW GDH ADSO with CDS
 version: 0.0.1
 modules:
@@ -15,7 +15,7 @@ modules:
         group: SERVICE_REPLACEMENTS
         properties:
           key: ServiceName_1
-          service: '~{KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS}'      
+          service: '~{KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS}'
   - name: cap_gdh_bw_external_layer-srv
     type: java
     path: srv
@@ -24,36 +24,51 @@ modules:
     provides:
       - name: srv_api
         properties:
-          url: ${default-url}
+          url: '${default-url}'
     requires:
       - name: cap_gdh_bw_external_layer-db-hdi-container
         properties:
-          JBP_CONFIG_RESOURCE_CONFIGURATION: '[tomcat/webapps/ROOT/META-INF/context.xml:
-            {"service_name_for_DefaultDB" : "~{hdi-container-name}"}]'
-
-  
-
-
-  
-
-
-
+          JBP_CONFIG_RESOURCE_CONFIGURATION: '[tomcat/webapps/ROOT/META-INF/context.xml: {"service_name_for_DefaultDB" : "~{hdi-container-name}"}]'
   - name: ui5_list_report_activity_log
     type: html5
     path: ui5_list_report_activity_log
     requires:
-     - name: srv_api
-       group: destinations
-       properties:
-        name: odatasrv_api
-        url:  ~{url}       
+      - name: srv_api
+        group: destinations
+        properties:
+          name: odatasrv_api
+          url: '~{url}'
+  - name: ui_list_report_activity_log_cvc
+    type: html5
+    path: ui_list_report_activity_log_cvc
+    requires:
+      - name: srv_api
+        group: destinations
+        properties:
+          name: odatasrv_api
+          url: '~{url}'
+  - name: ui5_list_report_al_dynamic_line_data
+    type: html5
+    path: ui5_list_report_al_dynamic_line_data
+    requires:
+      - name: srv_api
+        group: destinations
+        properties:
+          name: odatasrv_api
+          url: '~{url}'
+      - name: sapui5-provider
 
 resources:
   - name: cap_gdh_bw_external_layer-db-hdi-container
     type: com.sap.xs.hdi-container
     properties:
-      hdi-container-name: ${service-name}
+      hdi-container-name: '${service-name}'
   - name: KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS
     type: org.cloudfoundry.existing-service
     properties:
-      KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS: '${service-name}'      
+      KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS: '${service-name}'
+  - name: sapui5-provider
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: sapui5_sb
+      service-plan: sapui5-1.60

@@ -243,6 +243,252 @@
           "type": "cds.Decimal",
           "precision": 31,
           "scale": 6
+        },
+        "COUNTER": {
+          "@cds.persistence.name": "COUNTER",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "AL_DYNAMIC_LINE_DATA_EDGES": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "AL_DYNAMIC_LINE_DATA_EDGES",
+      "elements": {
+        "EDGE_ID": {
+          "@cds.persistence.name": "EDGE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "START_NODE": {
+          "@cds.persistence.name": "START_NODE",
+          "type": "cds.String",
+          "length": 500
+        },
+        "END_NODE": {
+          "@cds.persistence.name": "END_NODE",
+          "type": "cds.String",
+          "length": 500
+        },
+        "DS_MAX": {
+          "@cds.persistence.name": "DS_MAX",
+          "type": "cds.Integer"
+        },
+        "DS_MIN": {
+          "@cds.persistence.name": "DS_MIN",
+          "type": "cds.Integer"
+        },
+        "DS_AVG": {
+          "@cds.persistence.name": "DS_AVG",
+          "type": "cds.Double"
+        },
+        "DS_MEDIAN": {
+          "@cds.persistence.name": "DS_MEDIAN",
+          "type": "cds.Double"
+        },
+        "DS_STTDEV": {
+          "@cds.persistence.name": "DS_STTDEV",
+          "type": "cds.Double"
+        },
+        "DS_VAR": {
+          "@cds.persistence.name": "DS_VAR",
+          "type": "cds.Double"
+        }
+      }
+    },
+    "AL_DYNAMIC_LINE_DATA_V2_EDGES": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "AL_DYNAMIC_LINE_DATA_V2_EDGES",
+      "elements": {
+        "EDGE_ID": {
+          "@cds.persistence.name": "EDGE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "START_NODE": {
+          "@cds.persistence.name": "START_NODE",
+          "type": "cds.String",
+          "length": 500
+        },
+        "END_NODE": {
+          "@cds.persistence.name": "END_NODE",
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "AL_DYNAMIC_LINE_DATA_V2_VERTICES": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "AL_DYNAMIC_LINE_DATA_V2_VERTICES",
+      "elements": {
+        "NODE_ID": {
+          "@cds.persistence.name": "NODE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 36
+        },
+        "SFC_VOLUME": {
+          "@cds.persistence.name": "SFC_VOLUME",
+          "type": "cds.Integer"
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "type": "cds.Integer"
+        },
+        "DS_START_2_COMPLETE_MAX": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_MIN": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_AVG": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_MEDIAN": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_COMPLETE_STDEV": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_COMPLETE_VAR": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_MAX": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_MIN": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_AVG": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_MEDIAN": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_STDEV": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_VAR": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_MAX": {
+          "@cds.persistence.name": "DS_START_2_START_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_MIN": {
+          "@cds.persistence.name": "DS_START_2_START_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_AVG": {
+          "@cds.persistence.name": "DS_START_2_START_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_MEDIAN": {
+          "@cds.persistence.name": "DS_START_2_START_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_STDEV": {
+          "@cds.persistence.name": "DS_START_2_START_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_VAR": {
+          "@cds.persistence.name": "DS_START_2_START_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        }
+      }
+    },
+    "AL_DYNAMIC_LINE_DATA_VERTICES": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "AL_DYNAMIC_LINE_DATA_VERTICES",
+      "elements": {
+        "NODE_ID": {
+          "@cds.persistence.name": "NODE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 36
+        },
+        "SFC_VOLUME": {
+          "@cds.persistence.name": "SFC_VOLUME",
+          "type": "cds.Integer"
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "type": "cds.Integer"
         }
       }
     },
@@ -575,6 +821,503 @@
         }
       }
     },
+    "CVC_ACTIVITY_LOG": {
+      "kind": "entity",
+      "@cds.persistence.exists": true,
+      "@cds.persistence.name": "CVC_ACTIVITY_LOG",
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTION_CODE": {
+          "@cds.persistence.name": "ACTION_CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "ACTION_DETAIL": {
+          "@cds.persistence.name": "ACTION_DETAIL",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_HANDLE_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_4": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_5": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROCESS_LOT": {
+          "@cds.persistence.name": "PROCESS_LOT",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "REWORK": {
+          "@cds.persistence.name": "REWORK",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREV_SITE": {
+          "@cds.persistence.name": "PREV_SITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "key": true,
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "COUNTER": {
+          "@cds.persistence.name": "COUNTER",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "GDHMEALDYNAMICLINEService": {
+      "kind": "service",
+      "@source": "srv/al_dynamic_line_data_services.cds"
+    },
+    "GDHMEALDYNAMICLINEService.EDGES_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "EDGES",
+      "@cds.persistence.name": "GDHMEALDYNAMICLINESERVICE_EDGES_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "AL_DYNAMIC_LINE_DATA_V2_EDGES"
+            ],
+            "as": "EDGES_V2_Alias"
+          }
+        }
+      },
+      "elements": {
+        "EDGE_ID": {
+          "@cds.persistence.name": "EDGE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "START_NODE": {
+          "@cds.persistence.name": "START_NODE",
+          "type": "cds.String",
+          "length": 500
+        },
+        "END_NODE": {
+          "@cds.persistence.name": "END_NODE",
+          "type": "cds.String",
+          "length": 500
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEALDYNAMICLINEService.LINES_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "LINES",
+      "@UI.HeaderInfo.$Type": "UI.HeaderInfoType",
+      "@UI.HeaderInfo.TypeName": "LINE",
+      "@UI.HeaderInfo.TypeNamePlural": "LINES",
+      "@UI.LineItem": [
+        {
+          "Value": {
+            "=": "LINE_KEY"
+          }
+        },
+        {
+          "Value": {
+            "=": "SFC_VOLUME"
+          }
+        }
+      ],
+      "@UI.PresentationVariant.SortOrder": [
+        {
+          "$Type": "Common.SortOrderType",
+          "Property": {
+            "=": "SFC_VOLUME"
+          },
+          "Descending": true
+        }
+      ],
+      "@UI.SelectionFields": [
+        {
+          "=": "LINE_KEY"
+        }
+      ],
+      "@cds.persistence.name": "GDHMEALDYNAMICLINESERVICE_LINES_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "LINES"
+            ],
+            "as": "LINES_Alias"
+          }
+        }
+      },
+      "elements": {
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SFC_VOLUME": {
+          "@Core.Computed": true,
+          "@cds.persistence.name": "SFC_VOLUME",
+          "type": "cds.Integer"
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEALDYNAMICLINEService.VERTICES_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "VERTICES",
+      "@cds.persistence.name": "GDHMEALDYNAMICLINESERVICE_VERTICES_SRV",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "AL_DYNAMIC_LINE_DATA_V2_VERTICES"
+            ],
+            "as": "VERTICES_V2_Alias"
+          }
+        }
+      },
+      "elements": {
+        "NODE_ID": {
+          "@cds.persistence.name": "NODE_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "type": "cds.String",
+          "length": 100
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "type": "cds.String",
+          "length": 36
+        },
+        "SFC_VOLUME": {
+          "@cds.persistence.name": "SFC_VOLUME",
+          "type": "cds.Integer"
+        },
+        "SEQUENCE": {
+          "@cds.persistence.name": "SEQUENCE",
+          "type": "cds.Integer"
+        },
+        "DS_START_2_COMPLETE_MAX": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_MIN": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_AVG": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_COMPLETE_MEDIAN": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_COMPLETE_STDEV": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_COMPLETE_VAR": {
+          "@cds.persistence.name": "DS_START_2_COMPLETE_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_MAX": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_MIN": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_AVG": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_COMPLETE_2_START_MEDIAN": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_STDEV": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_COMPLETE_2_START_VAR": {
+          "@cds.persistence.name": "DS_COMPLETE_2_START_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_MAX": {
+          "@cds.persistence.name": "DS_START_2_START_MAX",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_MIN": {
+          "@cds.persistence.name": "DS_START_2_START_MIN",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_AVG": {
+          "@cds.persistence.name": "DS_START_2_START_AVG",
+          "type": "cds.Integer64"
+        },
+        "DS_START_2_START_MEDIAN": {
+          "@cds.persistence.name": "DS_START_2_START_MEDIAN",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_STDEV": {
+          "@cds.persistence.name": "DS_START_2_START_STDEV",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        },
+        "DS_START_2_START_VAR": {
+          "@cds.persistence.name": "DS_START_2_START_VAR",
+          "type": "cds.Decimal",
+          "precision": 36,
+          "scale": 6
+        }
+      },
+      "$syntax": "projection"
+    },
     "GDHMEService": {
       "kind": "service",
       "@source": "srv/me-services.cds"
@@ -586,8 +1329,8 @@
       "@Capabilities.UpdateRestrictions.Updatable": false,
       "@Common.Label": "ACTIVITY_LOG",
       "@UI.HeaderInfo.$Type": "UI.HeaderInfoType",
-      "@UI.HeaderInfo.TypeName": "xxxx",
-      "@UI.HeaderInfo.TypeNamePlural": "yyyy",
+      "@UI.HeaderInfo.TypeName": "ACTIVITY",
+      "@UI.HeaderInfo.TypeNamePlural": "ACTIVITYS",
       "@UI.LineItem": [
         {
           "Value": {
@@ -930,6 +1673,10 @@
           "type": "cds.Decimal",
           "precision": 31,
           "scale": 6
+        },
+        "COUNTER": {
+          "@cds.persistence.name": "COUNTER",
+          "type": "cds.Integer"
         }
       },
       "$syntax": "projection"
@@ -1301,6 +2048,321 @@
           "@cds.persistence.name": "CALDAY",
           "type": "cds.String",
           "length": 8
+        }
+      },
+      "$syntax": "projection"
+    },
+    "GDHMEService.CVC_ACTIVITY_LOG_SRV": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": false,
+      "@Capabilities.InsertRestrictions.Insertable": false,
+      "@Capabilities.UpdateRestrictions.Updatable": false,
+      "@Common.Label": "ACTIVITY_LOG",
+      "@UI.HeaderInfo.$Type": "UI.HeaderInfoType",
+      "@UI.HeaderInfo.TypeName": "ACTIVITY",
+      "@UI.HeaderInfo.TypeNamePlural": "ACTIVITYS",
+      "@UI.LineItem": [
+        {
+          "Value": {
+            "=": "PLANT"
+          }
+        },
+        {
+          "Value": {
+            "=": "GMASITE"
+          }
+        },
+        {
+          "Value": {
+            "=": "OPERATION"
+          }
+        },
+        {
+          "Value": {
+            "=": "CALWEEK"
+          }
+        },
+        {
+          "Value": {
+            "=": "COUNTER"
+          }
+        }
+      ],
+      "@UI.SelectionFields": [
+        {
+          "=": "PLANT"
+        },
+        {
+          "=": "SFC"
+        },
+        {
+          "=": "OPERATION"
+        },
+        {
+          "=": "RESRCE"
+        },
+        {
+          "=": "MATERIAL"
+        },
+        {
+          "=": "ACTION_CODE"
+        }
+      ],
+      "@cds.persistence.name": "GDHMESERVICE_CVC_ACTIVITY_LOG_SRV",
+      "@sap.semantics": "aggregate",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "CVC_ACTIVITY_LOG"
+            ],
+            "as": "CVC_ACTIVITY_LOG_Alias"
+          }
+        }
+      },
+      "elements": {
+        "PLANT": {
+          "@cds.persistence.name": "PLANT",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "GMASITE": {
+          "@cds.persistence.name": "GMASITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "CALMONTH": {
+          "@cds.persistence.name": "CALMONTH",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "CALWEEK": {
+          "@cds.persistence.name": "CALWEEK",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "SFC": {
+          "@cds.persistence.name": "SFC",
+          "key": true,
+          "type": "cds.String",
+          "length": 13
+        },
+        "MATERIAL_PADDED": {
+          "@cds.persistence.name": "MATERIAL_PADDED",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "MATERIAL_REV": {
+          "@cds.persistence.name": "MATERIAL_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "RESRCE": {
+          "@cds.persistence.name": "RESRCE",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "OPERATION": {
+          "@cds.persistence.name": "OPERATION",
+          "key": true,
+          "type": "cds.String",
+          "length": 60
+        },
+        "OPERATION_REVISION": {
+          "@cds.persistence.name": "OPERATION_REVISION",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ACTION_CODE": {
+          "@cds.persistence.name": "ACTION_CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "ACTION_DETAIL": {
+          "@cds.persistence.name": "ACTION_DETAIL",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "ACTION_DETAIL_HANDLE_1": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_1",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_2": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_2",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_3": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_3",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_4": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_4",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "ACTION_DETAIL_HANDLE_5": {
+          "@cds.persistence.name": "ACTION_DETAIL_HANDLE_5",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "USER_ID": {
+          "@cds.persistence.name": "USER_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "MATERIAL": {
+          "@cds.persistence.name": "MATERIAL",
+          "key": true,
+          "type": "cds.String",
+          "length": 18
+        },
+        "ROUTER": {
+          "@cds.persistence.name": "ROUTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ROUTER_REV": {
+          "@cds.persistence.name": "ROUTER_REV",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "ROUTER_TYPE": {
+          "@cds.persistence.name": "ROUTER_TYPE",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PROCESS_LOT": {
+          "@cds.persistence.name": "PROCESS_LOT",
+          "key": true,
+          "type": "cds.String",
+          "length": 128
+        },
+        "STEP_ID": {
+          "@cds.persistence.name": "STEP_ID",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PRODUCTION_ORDER": {
+          "@cds.persistence.name": "PRODUCTION_ORDER",
+          "key": true,
+          "type": "cds.String",
+          "length": 36
+        },
+        "WORK_CENTER": {
+          "@cds.persistence.name": "WORK_CENTER",
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "REWORK": {
+          "@cds.persistence.name": "REWORK",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "PREV_SITE": {
+          "@cds.persistence.name": "PREV_SITE",
+          "key": true,
+          "type": "cds.String",
+          "length": 6
+        },
+        "PARTITION_DATE": {
+          "@cds.persistence.name": "PARTITION_DATE",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "DATE_TIME": {
+          "@cds.persistence.name": "DATE_TIME",
+          "key": true,
+          "type": "cds.String",
+          "length": 14
+        },
+        "CALYEAR": {
+          "@cds.persistence.name": "CALYEAR",
+          "key": true,
+          "type": "cds.String",
+          "length": 4
+        },
+        "HALFYEAR1": {
+          "@cds.persistence.name": "HALFYEAR1",
+          "key": true,
+          "type": "cds.String",
+          "length": 1
+        },
+        "CALMONTH2": {
+          "@cds.persistence.name": "CALMONTH2",
+          "key": true,
+          "type": "cds.String",
+          "length": 2
+        },
+        "CALDAY": {
+          "@cds.persistence.name": "CALDAY",
+          "key": true,
+          "type": "cds.String",
+          "length": 8
+        },
+        "UNIT": {
+          "@cds.persistence.name": "UNIT",
+          "type": "cds.String",
+          "length": 3
+        },
+        "QTY": {
+          "@cds.persistence.name": "QTY",
+          "type": "cds.Decimal",
+          "precision": 31,
+          "scale": 6
+        },
+        "COUNTER": {
+          "@cds.persistence.name": "COUNTER",
+          "type": "cds.Integer"
         }
       },
       "$syntax": "projection"
@@ -3825,6 +4887,62 @@
           "scale": 6
         }
       }
+    },
+    "LINES": {
+      "kind": "entity",
+      "@cds.persistence.name": "LINES",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "AL_DYNAMIC_LINE_DATA_V2_VERTICES"
+            ]
+          },
+          "columns": [
+            {
+              "key": true,
+              "ref": [
+                "LINE_KEY"
+              ]
+            },
+            {
+              "func": "MAX",
+              "args": [
+                {
+                  "ref": [
+                    "SFC_VOLUME"
+                  ]
+                }
+              ],
+              "as": "SFC_VOLUME",
+              "cast": {
+                "type": "cds.Integer"
+              }
+            }
+          ],
+          "groupBy": [
+            {
+              "ref": [
+                "LINE_KEY"
+              ]
+            }
+          ]
+        }
+      },
+      "elements": {
+        "LINE_KEY": {
+          "@cds.persistence.name": "LINE_KEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SFC_VOLUME": {
+          "@Core.Computed": true,
+          "@cds.persistence.name": "SFC_VOLUME",
+          "type": "cds.Integer"
+        }
+      },
+      "$syntax": "view"
     },
     "NC_CUSTOM_DATA": {
       "kind": "entity",

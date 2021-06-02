@@ -1,0 +1,7 @@
+GRAPH WORKSPACE "gw_dynamic_lines"
+  EDGE TABLE "al_dynamic_line_data_edges"
+    SOURCE COLUMN "START_NODE"
+    TARGET COLUMN "END_NODE"
+    KEY COLUMN "EDGE_ID"
+  VERTEX TABLE "al_dynamic_line_data_vertices"
+    KEY COLUMN "NODE_ID"

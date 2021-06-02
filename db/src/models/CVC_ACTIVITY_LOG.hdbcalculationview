@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CVC_ACTIVITY_LOG" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false" runWithInvokerPrivileges="true">
+<descriptions defaultDescription="CVC_ACTIVITY_LOG"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="GDHMESERVICE_ACTIVITY_LOG_SRV">
+    <resourceUri>GDHMESERVICE_ACTIVITY_LOG_SRV</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="PLANT"/>
+      <viewAttribute id="GMASITE"/>
+      <viewAttribute id="CALMONTH"/>
+      <viewAttribute id="CALWEEK"/>
+      <viewAttribute id="SFC"/>
+      <viewAttribute id="MATERIAL_PADDED"/>
+      <viewAttribute id="MATERIAL_REV"/>
+      <viewAttribute id="RESRCE"/>
+      <viewAttribute id="OPERATION"/>
+      <viewAttribute id="OPERATION_REVISION"/>
+      <viewAttribute id="ACTION_CODE"/>
+      <viewAttribute id="ACTION_DETAIL"/>
+      <viewAttribute id="ACTION_DETAIL_1"/>
+      <viewAttribute id="ACTION_DETAIL_2"/>
+      <viewAttribute id="ACTION_DETAIL_3"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE_1"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE_2"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE_3"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE_4"/>
+      <viewAttribute id="ACTION_DETAIL_HANDLE_5"/>
+      <viewAttribute id="USER_ID"/>
+      <viewAttribute id="MATERIAL"/>
+      <viewAttribute id="ROUTER"/>
+      <viewAttribute id="ROUTER_REV"/>
+      <viewAttribute id="ROUTER_TYPE"/>
+      <viewAttribute id="PROCESS_LOT"/>
+      <viewAttribute id="STEP_ID"/>
+      <viewAttribute id="PRODUCTION_ORDER"/>
+      <viewAttribute id="WORK_CENTER"/>
+      <viewAttribute id="REWORK"/>
+      <viewAttribute id="PREV_SITE"/>
+      <viewAttribute id="PARTITION_DATE"/>
+      <viewAttribute id="DATE_TIME"/>
+      <viewAttribute id="CALYEAR"/>
+      <viewAttribute id="HALFYEAR1"/>
+      <viewAttribute id="CALMONTH2"/>
+      <viewAttribute id="CALDAY"/>
+      <viewAttribute id="UNIT"/>
+      <viewAttribute id="QTY"/>
+      <viewAttribute id="COUNTER"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="GDHMESERVICE_ACTIVITY_LOG_SRV"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="PLANT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PLANT"/>
+    </attribute>
+    <attribute id="GMASITE" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GMASITE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="GMASITE"/>
+    </attribute>
+    <attribute id="CALMONTH" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CALMONTH"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CALMONTH"/>
+    </attribute>
+    <attribute id="CALWEEK" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CALWEEK"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CALWEEK"/>
+    </attribute>
+    <attribute id="SFC" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SFC"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SFC"/>
+    </attribute>
+    <attribute id="MATERIAL_PADDED" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL_PADDED"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MATERIAL_PADDED"/>
+    </attribute>
+    <attribute id="MATERIAL_REV" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL_REV"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MATERIAL_REV"/>
+    </attribute>
+    <attribute id="RESRCE" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RESRCE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="RESRCE"/>
+    </attribute>
+    <attribute id="OPERATION" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPERATION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="OPERATION"/>
+    </attribute>
+    <attribute id="OPERATION_REVISION" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPERATION_REVISION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="OPERATION_REVISION"/>
+    </attribute>
+    <attribute id="ACTION_CODE" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_CODE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_CODE"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_1" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_1"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_2" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_2"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_3" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_3"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE_1" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE_1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE_1"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE_2" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE_2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE_2"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE_3" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE_3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE_3"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE_4" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE_4"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE_4"/>
+    </attribute>
+    <attribute id="ACTION_DETAIL_HANDLE_5" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACTION_DETAIL_HANDLE_5"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ACTION_DETAIL_HANDLE_5"/>
+    </attribute>
+    <attribute id="USER_ID" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USER_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="USER_ID"/>
+    </attribute>
+    <attribute id="MATERIAL" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MATERIAL"/>
+    </attribute>
+    <attribute id="ROUTER" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUTER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ROUTER"/>
+    </attribute>
+    <attribute id="ROUTER_REV" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUTER_REV"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ROUTER_REV"/>
+    </attribute>
+    <attribute id="ROUTER_TYPE" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUTER_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ROUTER_TYPE"/>
+    </attribute>
+    <attribute id="PROCESS_LOT" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROCESS_LOT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PROCESS_LOT"/>
+    </attribute>
+    <attribute id="STEP_ID" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STEP_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="STEP_ID"/>
+    </attribute>
+    <attribute id="PRODUCTION_ORDER" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCTION_ORDER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRODUCTION_ORDER"/>
+    </attribute>
+    <attribute id="WORK_CENTER" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WORK_CENTER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WORK_CENTER"/>
+    </attribute>
+    <attribute id="REWORK" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REWORK"/>
+      <keyMapping columnObjectName="Projection_1" columnName="REWORK"/>
+    </attribute>
+    <attribute id="PREV_SITE" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREV_SITE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PREV_SITE"/>
+    </attribute>
+    <attribute id="PARTITION_DATE" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARTITION_DATE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PARTITION_DATE"/>
+    </attribute>
+    <attribute id="DATE_TIME" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATE_TIME"/>
+      <keyMapping columnObjectName="Projection_1" columnName="DATE_TIME"/>
+    </attribute>
+    <attribute id="CALYEAR" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CALYEAR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CALYEAR"/>
+    </attribute>
+    <attribute id="HALFYEAR1" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HALFYEAR1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HALFYEAR1"/>
+    </attribute>
+    <attribute id="CALMONTH2" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CALMONTH2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CALMONTH2"/>
+    </attribute>
+    <attribute id="CALDAY" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CALDAY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CALDAY"/>
+    </attribute>
+    <attribute id="UNIT" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UNIT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="UNIT"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="QTY" order="40" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="QTY"/>
+      <measureMapping columnObjectName="Projection_1" columnName="QTY"/>
+    </measure>
+    <measure id="COUNTER" order="41" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="COUNTER"/>
+      <measureMapping columnObjectName="Projection_1" columnName="COUNTER"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="218"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

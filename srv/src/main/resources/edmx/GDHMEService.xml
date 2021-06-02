@@ -16,6 +16,7 @@
         <EntitySet Name="CONTAINER_DATA_SRV" EntityType="GDHMEService.CONTAINER_DATA_SRV"/>
         <EntitySet Name="CONTAINER_MEMBER_SRV" EntityType="GDHMEService.CONTAINER_MEMBER_SRV"/>
         <EntitySet Name="CUSTOM_FIELDS_SRV" EntityType="GDHMEService.CUSTOM_FIELDS_SRV"/>
+        <EntitySet Name="CVC_ACTIVITY_LOG_SRV" EntityType="GDHMEService.CVC_ACTIVITY_LOG_SRV"/>
         <EntitySet Name="INVENTORY_DATA_SRV" EntityType="GDHMEService.INVENTORY_DATA_SRV"/>
         <EntitySet Name="NC_CUSTOM_DATA_SRV" EntityType="GDHMEService.NC_CUSTOM_DATA_SRV"/>
         <EntitySet Name="NC_DATA_REF_DES_SRV" EntityType="GDHMEService.NC_DATA_REF_DES_SRV"/>
@@ -112,6 +113,7 @@
         <Property Name="CALDAY" Type="Edm.String" MaxLength="8" Nullable="false"/>
         <Property Name="UNIT" Type="Edm.String" MaxLength="3"/>
         <Property Name="QTY" Type="Edm.Decimal" Scale="6" Precision="31"/>
+        <Property Name="COUNTER" Type="Edm.Int32"/>
       </EntityType>
       <EntityType Name="CONTAINER_DATA_SRV">
         <Key>
@@ -203,6 +205,89 @@
         <Property Name="HALFYEAR1" Type="Edm.String" MaxLength="1"/>
         <Property Name="CALMONTH2" Type="Edm.String" MaxLength="2"/>
         <Property Name="CALDAY" Type="Edm.String" MaxLength="8"/>
+      </EntityType>
+      <EntityType Name="CVC_ACTIVITY_LOG_SRV" sap:semantics="aggregate">
+        <Key>
+          <PropertyRef Name="PLANT"/>
+          <PropertyRef Name="GMASITE"/>
+          <PropertyRef Name="CALMONTH"/>
+          <PropertyRef Name="CALWEEK"/>
+          <PropertyRef Name="SFC"/>
+          <PropertyRef Name="MATERIAL_PADDED"/>
+          <PropertyRef Name="MATERIAL_REV"/>
+          <PropertyRef Name="RESRCE"/>
+          <PropertyRef Name="OPERATION"/>
+          <PropertyRef Name="OPERATION_REVISION"/>
+          <PropertyRef Name="ACTION_CODE"/>
+          <PropertyRef Name="ACTION_DETAIL"/>
+          <PropertyRef Name="ACTION_DETAIL_1"/>
+          <PropertyRef Name="ACTION_DETAIL_2"/>
+          <PropertyRef Name="ACTION_DETAIL_3"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE_1"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE_2"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE_3"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE_4"/>
+          <PropertyRef Name="ACTION_DETAIL_HANDLE_5"/>
+          <PropertyRef Name="USER_ID"/>
+          <PropertyRef Name="MATERIAL"/>
+          <PropertyRef Name="ROUTER"/>
+          <PropertyRef Name="ROUTER_REV"/>
+          <PropertyRef Name="ROUTER_TYPE"/>
+          <PropertyRef Name="PROCESS_LOT"/>
+          <PropertyRef Name="STEP_ID"/>
+          <PropertyRef Name="PRODUCTION_ORDER"/>
+          <PropertyRef Name="WORK_CENTER"/>
+          <PropertyRef Name="REWORK"/>
+          <PropertyRef Name="PREV_SITE"/>
+          <PropertyRef Name="PARTITION_DATE"/>
+          <PropertyRef Name="DATE_TIME"/>
+          <PropertyRef Name="CALYEAR"/>
+          <PropertyRef Name="HALFYEAR1"/>
+          <PropertyRef Name="CALMONTH2"/>
+          <PropertyRef Name="CALDAY"/>
+        </Key>
+        <Property Name="PLANT" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="GMASITE" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="CALMONTH" Type="Edm.String" MaxLength="6" Nullable="false"/>
+        <Property Name="CALWEEK" Type="Edm.String" MaxLength="6" Nullable="false"/>
+        <Property Name="SFC" Type="Edm.String" MaxLength="13" Nullable="false"/>
+        <Property Name="MATERIAL_PADDED" Type="Edm.String" MaxLength="18" Nullable="false"/>
+        <Property Name="MATERIAL_REV" Type="Edm.String" MaxLength="5" Nullable="false"/>
+        <Property Name="RESRCE" Type="Edm.String" MaxLength="36" Nullable="false"/>
+        <Property Name="OPERATION" Type="Edm.String" MaxLength="60" Nullable="false"/>
+        <Property Name="OPERATION_REVISION" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="ACTION_CODE" Type="Edm.String" MaxLength="20" Nullable="false"/>
+        <Property Name="ACTION_DETAIL" Type="Edm.String" MaxLength="50" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_1" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_2" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_3" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE" Type="Edm.String" MaxLength="50" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE_1" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE_2" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE_3" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE_4" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="ACTION_DETAIL_HANDLE_5" Type="Edm.String" MaxLength="30" Nullable="false"/>
+        <Property Name="USER_ID" Type="Edm.String" MaxLength="36" Nullable="false"/>
+        <Property Name="MATERIAL" Type="Edm.String" MaxLength="18" Nullable="false"/>
+        <Property Name="ROUTER" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ROUTER_REV" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="ROUTER_TYPE" Type="Edm.String" MaxLength="1" Nullable="false"/>
+        <Property Name="PROCESS_LOT" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="STEP_ID" Type="Edm.String" MaxLength="6" Nullable="false"/>
+        <Property Name="PRODUCTION_ORDER" Type="Edm.String" MaxLength="36" Nullable="false"/>
+        <Property Name="WORK_CENTER" Type="Edm.String" MaxLength="50" Nullable="false"/>
+        <Property Name="REWORK" Type="Edm.String" MaxLength="1" Nullable="false"/>
+        <Property Name="PREV_SITE" Type="Edm.String" MaxLength="6" Nullable="false"/>
+        <Property Name="PARTITION_DATE" Type="Edm.String" MaxLength="14" Nullable="false"/>
+        <Property Name="DATE_TIME" Type="Edm.String" MaxLength="14" Nullable="false"/>
+        <Property Name="CALYEAR" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="HALFYEAR1" Type="Edm.String" MaxLength="1" Nullable="false"/>
+        <Property Name="CALMONTH2" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="CALDAY" Type="Edm.String" MaxLength="8" Nullable="false"/>
+        <Property Name="UNIT" Type="Edm.String" MaxLength="3"/>
+        <Property Name="QTY" Type="Edm.Decimal" Scale="6" Precision="31"/>
+        <Property Name="COUNTER" Type="Edm.Int32"/>
       </EntityType>
       <EntityType Name="INVENTORY_DATA_SRV">
         <Key>
@@ -758,8 +843,8 @@
         <Annotation Term="Common.Label" String="ACTIVITY_LOG"/>
         <Annotation Term="UI.HeaderInfo">
           <Record Type="UI.HeaderInfoType">
-            <PropertyValue Property="TypeName" String="xxxx"/>
-            <PropertyValue Property="TypeNamePlural" String="yyyy"/>
+            <PropertyValue Property="TypeName" String="ACTIVITY"/>
+            <PropertyValue Property="TypeNamePlural" String="ACTIVITYS"/>
           </Record>
         </Annotation>
         <Annotation Term="UI.LineItem">
@@ -880,6 +965,61 @@
         <Annotation Term="Common.Label" String="CUSTOM_FIELDS"/>
       </Annotations>
       <Annotations Target="GDHMEService.EntityContainer/CUSTOM_FIELDS_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Capabilities.DeleteRestrictions">
+          <Record Type="Capabilities.DeleteRestrictionsType">
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.InsertRestrictions">
+          <Record Type="Capabilities.InsertRestrictionsType">
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.UpdateRestrictions">
+          <Record Type="Capabilities.UpdateRestrictionsType">
+            <PropertyValue Property="Updatable" Bool="false"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="GDHMEService.CVC_ACTIVITY_LOG_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Common.Label" String="ACTIVITY_LOG"/>
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="ACTIVITY"/>
+            <PropertyValue Property="TypeNamePlural" String="ACTIVITYS"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="PLANT"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="GMASITE"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="OPERATION"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="CALWEEK"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="COUNTER"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>PLANT</PropertyPath>
+            <PropertyPath>SFC</PropertyPath>
+            <PropertyPath>OPERATION</PropertyPath>
+            <PropertyPath>RESRCE</PropertyPath>
+            <PropertyPath>MATERIAL</PropertyPath>
+            <PropertyPath>ACTION_CODE</PropertyPath>
+          </Collection>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="GDHMEService.EntityContainer/CVC_ACTIVITY_LOG_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Capabilities.DeleteRestrictions">
           <Record Type="Capabilities.DeleteRestrictionsType">
             <PropertyValue Property="Deletable" Bool="false"/>

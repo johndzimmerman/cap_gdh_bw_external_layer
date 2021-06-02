@@ -1,0 +1,23 @@
+{
+  "AL_DYNAMIC_LINE_DATA_VERTICES": {
+    "target": {
+      "object": "al_dynamic_line_data_vertices"
+    }
+  },
+  "AL_DYNAMIC_LINE_DATA_EDGES": {
+    "target": {
+      "object": "al_dynamic_line_data_edges"
+    }
+  },
+  "AL_DYNAMIC_LINE_DATA_V2_VERTICES": {
+    "target": {
+      "object": "al_dynamic_line_data_v2_vertices"
+    }
+  },
+  "AL_DYNAMIC_LINE_DATA_V2_EDGES": {
+    "target": {
+      "object": "al_dynamic_line_data_v2_edges"
+    }
+  }   
+  
+}

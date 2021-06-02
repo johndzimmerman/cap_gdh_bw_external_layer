@@ -1,0 +1,44 @@
+	@cds.persistence.exists
+		entity CVC_ACTIVITY_LOG {
+				 KEY PLANT : String(000004);
+				 KEY GMASITE : String(000010);
+				 KEY CALMONTH : String(000006);
+				 KEY CALWEEK : String(000006);
+				 KEY SFC : String(000013);
+				 KEY MATERIAL_PADDED : String(000018);
+				 KEY MATERIAL_REV : String(000005);
+				 KEY RESRCE : String(000036);
+				 KEY OPERATION : String(000060);
+				 KEY OPERATION_REVISION : String(000002);
+				 KEY ACTION_CODE : String(000020);
+				 KEY ACTION_DETAIL : String(000050);
+				 KEY ACTION_DETAIL_1 : String(000030);
+				 KEY ACTION_DETAIL_2 : String(000030);
+				 KEY ACTION_DETAIL_3 : String(000030);
+				 KEY ACTION_DETAIL_HANDLE : String(000050);
+				 KEY ACTION_DETAIL_HANDLE_1 : String(000030);
+				 KEY ACTION_DETAIL_HANDLE_2 : String(000030);
+				 KEY ACTION_DETAIL_HANDLE_3 : String(000030);
+				 KEY ACTION_DETAIL_HANDLE_4 : String(000030);
+				 KEY ACTION_DETAIL_HANDLE_5 : String(000030);
+				 KEY USER_ID : String(000036);
+				 KEY MATERIAL : String(000018);
+				 KEY ROUTER : String(000040);
+				 KEY ROUTER_REV : String(000002);
+				 KEY ROUTER_TYPE : String(000001);
+				 KEY PROCESS_LOT : String(000128);
+				 KEY STEP_ID : String(000006);
+				 KEY PRODUCTION_ORDER : String(000036);
+				 KEY WORK_CENTER : String(000050);
+				 KEY REWORK : String(000001);
+				 KEY PREV_SITE : String(000006);
+				 KEY PARTITION_DATE : String(000014);
+				 KEY DATE_TIME : String(000014);
+				 KEY CALYEAR : String(000004);
+				 KEY HALFYEAR1 : String(000001);
+				 KEY CALMONTH2 : String(000002);
+				 KEY CALDAY : String(000008);
+				UNIT : String(000003);
+				QTY : Decimal(000031,000006);
+				COUNTER : Integer;
+	}

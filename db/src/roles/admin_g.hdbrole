@@ -1,0 +1,15 @@
+{
+	"role":{
+		"name": "cap_gdh_bw_external_layer.roles::admin#",
+		"schema_privileges": [{
+		   "privileges": ["SELECT METADATA", 
+						  "SELECT CDS METADATA",		   
+		    			  "SELECT",
+		    			  "INSERT", 
+		    			  "EXECUTE",	
+		    			  "DELETE", 
+		    			  "UPDATE" 		    			  
+		   ]
+		}]
+	}
+}

@@ -1,0 +1,35 @@
+FUNCTION "tf_get_al_line_data"( )
+        RETURNS TABLE (
+        "SFC"  NVARCHAR(13),
+        "ROUTER" NVARCHAR(40),
+        "MATERIAL"NVARCHAR(18),
+        "RESRCE"NVARCHAR(36),
+        "OPERATION"NVARCHAR(60),
+        "DURRATION_SECONDS" Integer,
+        "relPOSITION" Integer
+        )
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+    /*****************************
+        Write your function logic
+    ****************************/
+    
+	RETURN SELECT "SFC",
+	"ROUTER",
+	"MATERIAL",
+	"RESRCE",
+	"OPERATION",
+--	"ACTION_CODE",
+--	"DATE_TIME", 
+	SECONDS_BETWEEN("DATE_TIME", LEAD("DATE_TIME") OVER (PARTITION BY "SFC" ORDER BY SFC,DATE_TIME)) AS DURRATION_SECONDS,
+	ROW_NUMBER() OVER (PARTITION BY "SFC" ORDER BY SFC,DATE_TIME) AS "relPOSITION"  
+FROM "ACTIVITY_LOG"
+ WHERE  ("ACTION_CODE" = 'START' OR "ACTION_CODE" = 'PASS') 
+ and GMASITE='4' AND CALDAY >= '20210101'
+ and ROUTER = 'PCB_LAS_BOT_TOP_FLH'  AND "MATERIAL" = '12086090'
+ --PCB_LAS_BOT_TOP_FLH_12086090
+  order by SFC,DATE_TIME;
+
+
+END;

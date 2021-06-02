@@ -1,0 +1,78 @@
+PROCEDURE "sp_generate_edges"( IN in_table table (
+	"ROUTER" NVARCHAR(40),
+	"MATERIAL" NVARCHAR(18),
+	"RESRCE" NVARCHAR(18),
+	"OPERATION" NVARCHAR(18),
+	"VARIANT_ID" INTEGER,
+	"SEQUENCE" INTEGER,
+	"SFC_VOLUME" INTEGER,
+	"DS_MAX" INTEGER,
+	"DS_MIN" INTEGER,
+	"DS_AVG" DECIMAL,
+	"DS_MEDIAN" DECIMAL,
+	"DS_STTDEV" DECIMAL,
+	"DS_VAR" DOUBLE
+	),
+	OUT edges_table table (
+		"EDGE_ID"	NVARCHAR(500),
+		"LINE_KEY"	NVARCHAR(100),
+		"START_NODE" NVARCHAR(500),
+		"END_NODE" NVARCHAR(500),
+		"DS_MAX" INTEGER,
+		"DS_MIN" INTEGER,
+		"DS_AVG" DECIMAL,
+		"DS_MEDIAN" DECIMAL,
+		"DS_STTDEV" DECIMAL,
+		"DS_VAR" DOUBLE
+	)
+	
+)
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   READS SQL DATA AS
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/
+   
+   rslt1 =  SELECT
+	"SEQUENCE",
+	"ROUTER",
+	"MATERIAL",
+	"SFC_VOLUME",
+	"VARIANT_ID",
+	"RESRCE",
+	"OPERATION",
+	LEAD("RESRCE") OVER (PARTITION BY "VARIANT_ID" ORDER BY "SEQUENCE") AS "leadRESRCE",
+	LEAD("OPERATION") OVER (PARTITION BY "VARIANT_ID" ORDER BY "SEQUENCE") AS "leadOPERATION",	
+	LEAD("SEQUENCE") OVER (PARTITION BY "VARIANT_ID" ORDER BY "SEQUENCE") AS "leadSEQUENCE",
+	"DS_MAX",
+	"DS_MIN",
+	"DS_AVG",
+	"DS_MEDIAN",
+	"DS_STTDEV",
+	"DS_VAR"
+FROM :in_table
+where "RESRCE" is not null
+order by "VARIANT_ID","SEQUENCE";
+
+edges_table = SELECT 
+	"ROUTER"||'_'||"MATERIAL"||'_'||"RESRCE"||'_'||"OPERATION"|| '_' ||"VARIANT_ID"||'_'||"SEQUENCE"||'_2_'||"leadRESRCE"||'_'||"leadOPERATION"||'_'||"VARIANT_ID"||'_'||"leadSEQUENCE" AS "EDGE_ID",
+	"ROUTER" || '_' || "MATERIAL" || '_' || "VARIANT_ID" AS LINE_KEY,	
+	"ROUTER"||'_'||"MATERIAL"||'_'||"RESRCE"||'_'||"OPERATION"|| '_' ||"VARIANT_ID"||'_'||"SEQUENCE" AS "START_NODE",
+	"ROUTER"||'_'||"MATERIAL"||'_'||"leadRESRCE"||'_'||"leadOPERATION"|| '_' ||"VARIANT_ID"||'_'||"leadSEQUENCE" AS "END_NODE",
+	"DS_MAX",
+	"DS_MIN",
+	"DS_AVG",
+	"DS_MEDIAN",
+	"DS_STTDEV",
+	"DS_VAR"
+ FROM :rslt1 
+ WHERE "ROUTER"||'_'||"MATERIAL"||'_'||"RESRCE"||'_'||"OPERATION"|| '_' ||"VARIANT_ID"||'_'||"SEQUENCE"||'_2_'||"leadRESRCE"||'_'||"leadOPERATION"||'_'||"VARIANT_ID"||'_'||"leadSEQUENCE" IS not null;
+
+
+END
+
+
+

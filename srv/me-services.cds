@@ -1,4 +1,5 @@
 using ACTIVITY_LOG as ACTIVITY_LOG_Alias from '../db/data-model';
+using CVC_ACTIVITY_LOG as CVC_ACTIVITY_LOG_Alias from '../db/data-model';
 using CONTAINER_DATA as CONTAINER_DATA_Alias from '../db/data-model';
 using SFC_STEP as SFC_STEP_Alias from '../db/data-model';
 using CONTAINER_MEMBER as CONTAINER_MEMBER_Alias from '../db/data-model';
@@ -26,6 +27,15 @@ entity  ACTIVITY_LOG_SRV @(
 								DeleteRestrictions : { Deletable: false }
 							}
 					) as projection on   ACTIVITY_LOG_Alias;
+					
+entity  CVC_ACTIVITY_LOG_SRV @(
+							title:'ACTIVITY_LOG',
+							Capabilities : {
+								InsertRestrictions : { Insertable: false },
+								UpdateRestrictions : { Updatable: false },
+								DeleteRestrictions : { Deletable: false }
+							}
+					) as projection on   CVC_ACTIVITY_LOG_Alias;					
 
 entity  CONTAINER_DATA_SRV @(
 							title:'CONTAINER_DATA',

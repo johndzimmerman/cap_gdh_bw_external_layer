@@ -1,0 +1,68 @@
+ CODE SNIPS TO DYNAMICALLY CREATE SP_GROUP_AL_LINE_DATA
+ 
+ ***********************************************************
+  var i;
+  for (i = 1; i <= 50; i++) {
+    console.log('"'+i+'_RESRCE" NVARCHAR(36),');
+    console.log('"'+i+'_OPERATION" NVARCHAR(60),');
+    console.log('"'+i+'_DS_START_2_COMPLETE" BIGINT,');
+    console.log('"'+i+'_DS_COMPLETE_2_START" BIGINT,');
+    console.log('"'+i+'_DS_START_2_START" BIGINT,');
+  }
+  
+   ***********************************************************
+  var i;
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_RESRCE" NVARCHAR(36),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_OPERATION" NVARCHAR(60),'); }
+  console.log("VARIANT_ID" INTEGER,'); 
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_MAX" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_MIN" BIGINT,'); } 
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_AVG" BIGINT,'); } 
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_MEDIAN" DECIMAL(36,6),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_STDEV" DECIMAL(36,6),'); } 
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_COMPLETE_VAR" DECIMAL(36,6),'); }     
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_MAX" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_MIN" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_AVG" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_MEDIAN" DECIMAL(36,6),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_STDEV" DECIMAL(36,6),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_COMPLETE_2_START_VAR" DECIMAL(36,6),'); }    
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_MAX" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_MIN" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_AVG" BIGINT,'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_MEDIAN" DECIMAL(36,6),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_STDEV" DECIMAL(36,6),'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_DS_START_2_START_VAR" DECIMAL(36,6),'); }    
+
+  *********************************************************** 
+  var i;
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_RESRCE",'); }
+  for (i = 1; i <= 50; i++) { console.log('"'+i+'_OPERATION",'); }
+  console.log('ROW_NUMBER() OVER (PARTITION BY "ROUTER","MATERIAL" order by count(1) DESC) AS "VARIANT_ID",');
+  for (i = 1; i <= 50; i++) { console.log('MAX("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_MAX",'); }
+  for (i = 1; i <= 50; i++) { console.log('MIN("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_MIN",'); } 
+  for (i = 1; i <= 50; i++) { console.log('AVG("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_AVG",'); }   
+  for (i = 1; i <= 50; i++) { console.log('MEDIAN("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_MEDIAN",'); }
+  for (i = 1; i <= 50; i++) { console.log('STDDEV("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_STDEV",'); } 
+  for (i = 1; i <= 50; i++) { console.log('VAR("'+i+'_DS_START_2_COMPLETE") AS "'+i+'_DS_START_2_COMPLETE_VAR",'); }  
+
+
+  for (i = 1; i <= 50; i++) { console.log('MAX("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_MAX",'); }
+  for (i = 1; i <= 50; i++) { console.log('MIN("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_MIN",'); } 
+  for (i = 1; i <= 50; i++) { console.log('AVG("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_AVG",'); }   
+  for (i = 1; i <= 50; i++) { console.log('MEDIAN("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_MEDIAN",'); }
+  for (i = 1; i <= 50; i++) { console.log('STDDEV("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_STDEV",'); } 
+  for (i = 1; i <= 50; i++) { console.log('VAR("'+i+'_DS_COMPLETE_2_START") AS "'+i+'_DS_COMPLETE_2_START_VAR",'); } 
+  
+   for (i = 1; i <= 50; i++) { console.log('MAX("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_MAX",'); }
+  for (i = 1; i <= 50; i++) { console.log('MIN("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_MIN",'); } 
+  for (i = 1; i <= 50; i++) { console.log('AVG("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_AVG",'); }   
+  for (i = 1; i <= 50; i++) { console.log('MEDIAN("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_MEDIAN",'); }
+  for (i = 1; i <= 50; i++) { console.log('STDDEV("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_STDEV",'); } 
+  for (i = 1; i <= 50; i++) { console.log('VAR("'+i+'_DS_START_2_START") AS "'+i+'_DS_START_2_START_VAR",'); }  
+  max
+  min
+  avg
+  median
+  stdev
+  var

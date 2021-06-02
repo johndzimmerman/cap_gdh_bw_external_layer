@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="CVD_GET_AL_LINE_DATA_BY_GMASITE_ROUTER_MATERIAL_CALDATE" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_GET_AL_LINE_DATA_BY_GMASITE_ROUTER_MATERIAL_CALDATE"/>
+<localVariables>
+  <variable id="GMASITE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="INTEGER" length="10" defaultValue="4">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="SingleValue"/>
+    </variableProperties>
+  </variable>
+  <variable id="S_CALDAY" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="8" defaultValue="20200101">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="SingleValue"/>
+    </variableProperties>
+  </variable>
+  <variable id="E_CALDAY" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="8" defaultValue="20220101">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="SingleValue"/>
+    </variableProperties>
+  </variable>
+  <variable id="ROUTER" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="40" defaultValue="PCB_LAS_BOT_TOP_FLH">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="SingleValue"/>
+    </variableProperties>
+  </variable>
+  <variable id="MATERIAL" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="36" defaultValue="12086090">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="SingleValue"/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="tf_get_al_line_data_by_gmasite_router_material_caldate">
+    <targetVariable name="GMASITE" resourceUri="tf_get_al_line_data_by_gmasite_router_material_caldate"/>
+    <localVariable>GMASITE</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="tf_get_al_line_data_by_gmasite_router_material_caldate">
+    <targetVariable name="S_CALDAY" resourceUri="tf_get_al_line_data_by_gmasite_router_material_caldate"/>
+    <localVariable>S_CALDAY</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="tf_get_al_line_data_by_gmasite_router_material_caldate">
+    <targetVariable name="E_CALDAY" resourceUri="tf_get_al_line_data_by_gmasite_router_material_caldate"/>
+    <localVariable>E_CALDAY</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="tf_get_al_line_data_by_gmasite_router_material_caldate">
+    <targetVariable name="ROUTER" resourceUri="tf_get_al_line_data_by_gmasite_router_material_caldate"/>
+    <localVariable>ROUTER</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="tf_get_al_line_data_by_gmasite_router_material_caldate">
+    <targetVariable name="MATERIAL" resourceUri="tf_get_al_line_data_by_gmasite_router_material_caldate"/>
+    <localVariable>MATERIAL</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="tf_get_al_line_data_by_gmasite_router_material_caldate" type="TABLE_FUNCTION">
+    <resourceUri>tf_get_al_line_data_by_gmasite_router_material_caldate</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="tf_get_al_line_data_by_gmasite_router_material_caldate">
+  <attributes>
+    <attribute id="SFC" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SFC"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="SFC"/>
+    </attribute>
+    <attribute id="ROUTER" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUTER"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="ROUTER"/>
+    </attribute>
+    <attribute id="MATERIAL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="MATERIAL"/>
+    </attribute>
+    <attribute id="RESRCE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RESRCE"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="RESRCE"/>
+    </attribute>
+    <attribute id="OPERATION" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPERATION"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="OPERATION"/>
+    </attribute>
+    <attribute id="DS_START_2_COMPLETE" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DS_START_2_COMPLETE"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="DS_START_2_COMPLETE"/>
+    </attribute>
+    <attribute id="DS_COMPLETE_2_START" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DS_COMPLETE_2_START"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="DS_COMPLETE_2_START"/>
+    </attribute>
+    <attribute id="DS_START_2_START" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DS_START_2_START"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="DS_START_2_START"/>
+    </attribute>
+    <attribute id="relPOSITION" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="relPOSITION"/>
+      <keyMapping columnObjectName="tf_get_al_line_data_by_gmasite_router_material_caldate" columnName="relPOSITION"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

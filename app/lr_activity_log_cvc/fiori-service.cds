@@ -4,7 +4,12 @@ using GDHMEService as service from '../../srv/me-services';
 //
 //	T_ACTIVITY_LOG List Report Page
 //
-annotate service.ACTIVITY_LOG_SRV with @UI : { 
+
+//sap:semantics to aggregate 
+
+annotate service.CVC_ACTIVITY_LOG_SRV with @sap.semantics: 'aggregate';
+
+annotate service.CVC_ACTIVITY_LOG_SRV with @UI : { 
     HeaderInfo  : {
         $Type : 'UI.HeaderInfoType',
         TypeName : 'ACTIVITY',
@@ -14,17 +19,8 @@ annotate service.ACTIVITY_LOG_SRV with @UI : {
     LineItem  : [
           {Value : PLANT},
           {Value : GMASITE},
-          {Value : SFC},
           {Value : OPERATION},
-          {Value : RESRCE}, 
-          {Value : PARTITION_DATE}, 
-          {Value : ACTION_CODE},  
-          {Value : MATERIAL},   
-          {Value : STEP_ID},  
-          {Value : DATE_TIME},    
-          {Value : CALDAY},    
           {Value : CALWEEK},     
-          {Value : CALMONTH}, 
-          {Value : CALYEAR}                
+          {Value : COUNTER}
     ],
  };

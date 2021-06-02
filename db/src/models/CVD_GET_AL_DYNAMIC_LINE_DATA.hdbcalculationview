@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CVD_GET_AL_DYNAMIC_LINE_DATA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_GET_AL_DYNAMIC_LINE_DATA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="tf_get_al_line_data" type="TABLE_FUNCTION">
+    <resourceUri>tf_get_al_line_data</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="tf_get_al_line_data">
+  <attributes>
+    <attribute id="SFC" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SFC"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="SFC"/>
+    </attribute>
+    <attribute id="ROUTER" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUTER"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="ROUTER"/>
+    </attribute>
+    <attribute id="MATERIAL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="MATERIAL"/>
+    </attribute>
+    <attribute id="RESRCE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RESRCE"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="RESRCE"/>
+    </attribute>
+    <attribute id="OPERATION" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPERATION"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="OPERATION"/>
+    </attribute>
+    <attribute id="relPOSITION" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="relPOSITION"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="relPOSITION"/>
+    </attribute>
+    <attribute id="DURRATION_SECONDS" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DURRATION_SECONDS"/>
+      <keyMapping columnObjectName="tf_get_al_line_data" columnName="DURRATION_SECONDS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="-36" y="105"/>
+    
+      <rectangleSize width="160"/>
+    </shape></shapes>
+</layout>
+</Calculation:scenario>

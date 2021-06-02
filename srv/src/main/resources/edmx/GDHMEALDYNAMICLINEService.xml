@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+  <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+  </edmx:Reference>
+  <edmx:DataServices m:DataServiceVersion="2.0">
+    <Schema Namespace="GDHMEALDYNAMICLINEService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="EDGES_SRV" EntityType="GDHMEALDYNAMICLINEService.EDGES_SRV"/>
+        <EntitySet Name="LINES_SRV" EntityType="GDHMEALDYNAMICLINEService.LINES_SRV"/>
+        <EntitySet Name="VERTICES_SRV" EntityType="GDHMEALDYNAMICLINEService.VERTICES_SRV"/>
+      </EntityContainer>
+      <EntityType Name="EDGES_SRV">
+        <Key>
+          <PropertyRef Name="EDGE_ID"/>
+        </Key>
+        <Property Name="EDGE_ID" Type="Edm.String" MaxLength="500" Nullable="false"/>
+        <Property Name="LINE_KEY" Type="Edm.String" MaxLength="100"/>
+        <Property Name="START_NODE" Type="Edm.String" MaxLength="500"/>
+        <Property Name="END_NODE" Type="Edm.String" MaxLength="500"/>
+      </EntityType>
+      <EntityType Name="LINES_SRV">
+        <Key>
+          <PropertyRef Name="LINE_KEY"/>
+        </Key>
+        <Property Name="LINE_KEY" Type="Edm.String" MaxLength="100" Nullable="false"/>
+        <Property Name="SFC_VOLUME" Type="Edm.Int32"/>
+      </EntityType>
+      <EntityType Name="VERTICES_SRV">
+        <Key>
+          <PropertyRef Name="NODE_ID"/>
+        </Key>
+        <Property Name="NODE_ID" Type="Edm.String" MaxLength="500" Nullable="false"/>
+        <Property Name="LINE_KEY" Type="Edm.String" MaxLength="100"/>
+        <Property Name="RESRCE" Type="Edm.String" MaxLength="36"/>
+        <Property Name="OPERATION" Type="Edm.String" MaxLength="36"/>
+        <Property Name="SFC_VOLUME" Type="Edm.Int32"/>
+        <Property Name="SEQUENCE" Type="Edm.Int32"/>
+        <Property Name="DS_START_2_COMPLETE_MAX" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_COMPLETE_MIN" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_COMPLETE_AVG" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_COMPLETE_MEDIAN" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_START_2_COMPLETE_STDEV" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_START_2_COMPLETE_VAR" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_COMPLETE_2_START_MAX" Type="Edm.Int64"/>
+        <Property Name="DS_COMPLETE_2_START_MIN" Type="Edm.Int64"/>
+        <Property Name="DS_COMPLETE_2_START_AVG" Type="Edm.Int64"/>
+        <Property Name="DS_COMPLETE_2_START_MEDIAN" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_COMPLETE_2_START_STDEV" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_COMPLETE_2_START_VAR" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_START_2_START_MAX" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_START_MIN" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_START_AVG" Type="Edm.Int64"/>
+        <Property Name="DS_START_2_START_MEDIAN" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_START_2_START_STDEV" Type="Edm.Decimal" Scale="6" Precision="36"/>
+        <Property Name="DS_START_2_START_VAR" Type="Edm.Decimal" Scale="6" Precision="36"/>
+      </EntityType>
+      <Annotations Target="GDHMEALDYNAMICLINEService.EDGES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Common.Label" String="EDGES"/>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.EntityContainer/EDGES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Capabilities.DeleteRestrictions">
+          <Record Type="Capabilities.DeleteRestrictionsType">
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.InsertRestrictions">
+          <Record Type="Capabilities.InsertRestrictionsType">
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.UpdateRestrictions">
+          <Record Type="Capabilities.UpdateRestrictionsType">
+            <PropertyValue Property="Updatable" Bool="false"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.LINES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Common.Label" String="LINES"/>
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="LINE"/>
+            <PropertyValue Property="TypeNamePlural" String="LINES"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="LINE_KEY"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="SFC_VOLUME"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.PresentationVariant">
+          <Record Type="UI.PresentationVariantType">
+            <PropertyValue Property="SortOrder">
+              <Collection>
+                <Record Type="Common.SortOrderType">
+                  <PropertyValue Property="Property" PropertyPath="SFC_VOLUME"/>
+                  <PropertyValue Property="Descending" Bool="true"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>LINE_KEY</PropertyPath>
+          </Collection>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.EntityContainer/LINES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Capabilities.DeleteRestrictions">
+          <Record Type="Capabilities.DeleteRestrictionsType">
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.InsertRestrictions">
+          <Record Type="Capabilities.InsertRestrictionsType">
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.UpdateRestrictions">
+          <Record Type="Capabilities.UpdateRestrictionsType">
+            <PropertyValue Property="Updatable" Bool="false"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.LINES_SRV/SFC_VOLUME" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Core.Computed" Bool="true"/>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.VERTICES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Common.Label" String="VERTICES"/>
+      </Annotations>
+      <Annotations Target="GDHMEALDYNAMICLINEService.EntityContainer/VERTICES_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="Capabilities.DeleteRestrictions">
+          <Record Type="Capabilities.DeleteRestrictionsType">
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.InsertRestrictions">
+          <Record Type="Capabilities.InsertRestrictionsType">
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.UpdateRestrictions">
+          <Record Type="Capabilities.UpdateRestrictionsType">
+            <PropertyValue Property="Updatable" Bool="false"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,21 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ng="sap.suite.ui.commons.networkgraph"
+	controllerName="com.kostal.ui5_list_report_al_dynamic_line_data.component.controller.Default">
+	<App>
+		<pages>
+			<Page id="group" title="{i18n>groupTitle}">
+				<content>
+					<ng:Graph id="networkGraph" nodes="{/VERTICES_SRV}" lines="{/EDGES_SRV}">
+						<ng:nodes>
+							<ng:Node key="{NODE_ID}" title="{OPERATION}" shape="Box" icon="sap-icon://action-settings" 
+								status="Success">
+							</ng:Node>
+						</ng:nodes>
+						<ng:lines>
+							<ng:Line from="{START_NODE}" to="{END_NODE}"/>
+						</ng:lines>
+					</ng:Graph>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
