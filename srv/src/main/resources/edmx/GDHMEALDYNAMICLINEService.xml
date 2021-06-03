@@ -112,6 +112,11 @@
                 </Record>
               </Collection>
             </PropertyValue>
+            <PropertyValue Property="Total">
+              <Collection>
+                <PropertyPath>SFC_VOLUME</PropertyPath>
+              </Collection>
+            </PropertyValue>
           </Record>
         </Annotation>
         <Annotation Term="UI.SelectionFields">

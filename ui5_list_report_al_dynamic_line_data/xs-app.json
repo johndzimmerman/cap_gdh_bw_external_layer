@@ -9,7 +9,7 @@
 		"localDir": "resources",
 		"replace": {
 			"pathSuffixes": [
-				"flpSandbox.html"
+				"flpSandbox.html","index.html"
 			],
 			"services": {
 				"sapui5_sb": {

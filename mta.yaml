@@ -50,6 +50,19 @@ modules:
   - name: ui5_list_report_al_dynamic_line_data
     type: html5
     path: ui5_list_report_al_dynamic_line_data
+    properties:
+     CORS:
+       - uriPattern: .
+         allowedMethods:
+           - GET
+           - POST
+         allowedOrigin:
+           - host: '*'
+    provides:
+     - name: ui5_list_report_al_dynamic_line_data_ref
+       public: true
+       properties:
+         url: '${default-url}'    
     requires:
       - name: srv_api
         group: destinations
@@ -63,10 +76,12 @@ resources:
     type: com.sap.xs.hdi-container
     properties:
       hdi-container-name: '${service-name}'
+      
   - name: KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS
     type: org.cloudfoundry.existing-service
     properties:
       KOSTAL_BW_DATA_ACCESS_TABLE_GRANTOR_UPS: '${service-name}'
+      
   - name: sapui5-provider
     type: org.cloudfoundry.managed-service
     parameters:

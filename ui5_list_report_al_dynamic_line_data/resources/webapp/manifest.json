@@ -17,7 +17,8 @@
 				"uri": "/odata/v2/GDHMEALDYNAMICLINEService/",
 				"type": "OData",
 				"settings": {
-					"localUri": "localService/metadata.xml"
+					"localUri": "localService/metadata.xml",
+					"annotations": []
 				}
 			}
 		},
@@ -113,7 +114,8 @@
 					"name": "sap.suite.ui.generic.template.ListReport",
 					"list": true,
 					"settings": {
-						"smartVariantManagement": false
+						"multiSelect": true,
+						"smartVariantManagement": true
 					}
 				},
 				"pages": {

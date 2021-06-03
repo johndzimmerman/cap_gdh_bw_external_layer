@@ -18,7 +18,8 @@ annotate service.LINES_SRV with @UI : {
           {Value : SFC_VOLUME}         
     ],
     PresentationVariant: { 
-			SortOrder: [ {$Type: 'Common.SortOrderType', Property: SFC_VOLUME, Descending: true} ]
+			SortOrder: [ {$Type: 'Common.SortOrderType', Property: SFC_VOLUME, Descending: true} ],
+            Total : [ SFC_VOLUME   ]
 		}
  };
  
